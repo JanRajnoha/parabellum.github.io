@@ -15,7 +15,7 @@
 body {
   padding-top: 126px;
   background-color: #000;
-  background-image: url("https://uploads-ssl.webflow.com/5f46939903638e51bafead43/5f46939938d94d8139021201_fans-black.jpg");
+  background-image: url("/iomg/Hero4.jpg");
   background-size: cover;
   font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
@@ -409,7 +409,7 @@ p {
   border-style: none;
   border-width: 0px;
   border-color: #000;
-  background-image: url("/img/hero.png");
+  background-image: url("/img/hero.jpg");
   color: #000;
 }
 
