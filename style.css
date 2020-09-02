@@ -29,12 +29,12 @@ div {
 }
 
 h1 {
+    font-size: 69px;
 }
 
 .page-title {
     line-height: 54px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 69px;
     display: inline-block;
     margin-right: auto;
     margin-bottom: 19px;
