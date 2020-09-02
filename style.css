@@ -18,15 +18,16 @@ body {
 
 div {
 
+    margin-left: auto;
 }
 
-div.main-container {
-    margin-left: auto;
+.main-container {
     margin-right: auto;
     max-width: 940px;
 }
 
 h1 {
+    display: inline-block;
 }
 
 .page-title {
