@@ -58,16 +58,16 @@ img {
 }
 
 .icon-big {
-    width: 100px
-    height: 100px
+    width: 100px;
+    height: 100px;
 }
 
 .fb-icon {
-    src: url("/parabellum.github.io/img/icons/fb_icon.png");
+    background-image: url("/parabellum.github.io/img/icons/fb_icon.png");
 }
 
 .insta-icon {
-    src: url("/parabellum.github.io/img/icons/insta_icon.png");
+    background-image: url("/parabellum.github.io/img/icons/insta_icon.png");
 }
 
 
