@@ -7,7 +7,7 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
+    background-color: #000;
     font-family: Arial,sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -17,17 +17,15 @@ body {
 } 
 
 div {
-
-    margin-left: auto;
 }
 
 .main-container {
+    margin-left: auto;
     margin-right: auto;
     max-width: 940px;
 }
 
 h1 {
-    display: inline-block;
 }
 
 .page-title {
