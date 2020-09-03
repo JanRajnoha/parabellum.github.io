@@ -57,6 +57,9 @@ h2 {
 }
 
 h3 {
+    margin-bottom: 10px;
+    line-height: 23px;
+    font-weight: 300;
 }
 
 .coming-soon-prompt {
@@ -68,7 +71,7 @@ h3 {
     border-width: 1px;
     border-color: #fff;
     color: #fff;
-    font-size: 22px;
+    font-size: 23px;
     letter-spacing: 4px;
     text-transform: uppercase;
     text-shadow: none;
