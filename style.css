@@ -47,6 +47,30 @@ h1 {
     font-weight: 700;
     letter-spacing: 8px;
     text-shadow: none;
+    text-transform: uppercase;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+.prompt {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+    border-style: none;
+    border-width: 1px;
+    border-color: #fff;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: none;
 }
 
 p {
