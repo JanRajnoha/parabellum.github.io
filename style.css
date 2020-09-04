@@ -2,7 +2,19 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    height: 100%
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 7s);
 }
 
 body {
@@ -125,26 +137,6 @@ img {
     /*background-image: url("/parabellum.github.io/img/icons/insta_icon.png");*/
 }
 
-
-/* ------------------------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --marquee-width: 80vw;
-  --marquee-height: 20vh;
-  /* --marquee-elements: 12; */ /* defined with JavaScript */
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 7s);
-}
-
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
@@ -153,6 +145,7 @@ img {
   overflow: hidden;
   position: relative;
 }
+
 .marquee:before, .marquee:after {
   position: absolute;
   top: 0;
@@ -161,27 +154,33 @@ img {
   content: "";
   z-index: 1;
 }
+
 .marquee:before {
   left: 0;
   background: linear-gradient(to right, #111 0%, transparent 100%);
 }
+
 .marquee:after {
   right: 0;
   background: linear-gradient(to left, #111 0%, transparent 100%);
 }
+
 .marquee-content {
   list-style: none;
   height: 100%;
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-/* .marquee-content:hover {
+
+.marquee-content:hover {
   animation-play-state: paused;
-} */
+} 
+
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
 }
+
 .marquee-content li {
   display: flex;
   justify-content: center;
@@ -196,7 +195,7 @@ img {
 
 .marquee-content li img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%; 
   border: 2px solid #eee;
 }
 
