@@ -19,6 +19,20 @@
             type="text/javascript">
     </script>
 
+    <script type="text/javascript">
+
+    const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
+    </script>
+
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,700"
           media="all">
@@ -53,6 +67,20 @@
                  src="/parabellum.github.io/img/icons/insta_icon.png"
                  alt="Instagram icon">
         </div>
+
+          <div class="marquee">
+    <ul class="marquee-content">
+      <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-codepen"></i></li>
+      <li><i class="fab fa-free-code-camp"></i></li>
+      <li><i class="fab fa-dev"></i></li>
+      <li><i class="fab fa-react"></i></li>
+      <li><i class="fab fa-vuejs"></i></li>
+      <li><i class="fab fa-angular"></i></li>
+      <li><i class="fab fa-docker"></i></li>
+      <li><img src="https://janrajnoha.cz/parabellum.github.io/img/Hero2.jpg"></li>
+    </ul>
+  </div>
 
         <div class="footer-section">
             <!--<div class="footer-container">-->
