@@ -49,12 +49,15 @@ body {
     right: 0;
     bottom: 0;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color: rgba(107, 104, 104, 0.18);
     /*color: #7e7c87;*/
 }
 
 .footer-container {
     color: hsla(0, 0%, 100%, 0.52);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
 }
 
 .copyright {
@@ -71,6 +74,7 @@ body {
 
 .col-row{
     display: flex;
+    width: 100%;
 }
 
 h1 {
