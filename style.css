@@ -45,15 +45,29 @@ div {
 
 .footer-section {
     position: static;
+    display: flex;
     left: 0;
     right: 0;
     bottom: 0;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.18);
-    color: #7e7c87;
+    /*color: #7e7c87;*/
 }
 
 .footer-container {
+    color: hsla(0, 0%, 100%, 0.52);
+}
+
+.copyright {
+    text-align: left;
+}
+
+.signature {
+    text-align: right;
+}
+
+.col-50 {
+    width: 50%;
 }
 
 h1 {
