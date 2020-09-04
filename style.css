@@ -57,7 +57,7 @@ body {
     color: hsla(0, 0%, 100%, 0.52);
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 40vw !important;
 }
 
 .copyright {
