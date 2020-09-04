@@ -171,7 +171,7 @@ img {
   white-space: nowrap;
 }
 
-.marquee-content li img {
+.marquee-image {
   width: 15vw;    
    height: 100%;
   display: block;
