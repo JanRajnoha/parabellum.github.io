@@ -3,17 +3,14 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-  --marquee-width: 80vw;
   --marquee-height: 20vh;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-element-width: calc(150vw / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 7s);
 }
 
@@ -137,10 +134,8 @@ img {
     /*background-image: url("/parabellum.github.io/img/icons/insta_icon.png");*/
 }
 
-.marquee {
-  width: var(--marquee-width);
+.marquee-gallery {
   height: var(--marquee-height);
-  color: #eee;
   overflow: hidden;
   position: relative;
 }
@@ -182,7 +177,6 @@ img {
 @media (max-width: 600px) {
   html { font-size: 12px; }
   :root {
-    --marquee-width: 100vw;
     --marquee-height: 16vh;
     --marquee-elements-displayed: 3;
   }
