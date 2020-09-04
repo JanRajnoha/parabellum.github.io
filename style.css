@@ -164,7 +164,6 @@ img {
   align-items: center;
   /* text-align: center; */
   flex-shrink: 0;
-  margin: 1px;
   max-height: 100%;
   font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
   white-space: nowrap;
@@ -174,7 +173,7 @@ img {
   width: 15vw;    
    height: 100%;
   display: block;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   object-fit: cover;
 }
 
