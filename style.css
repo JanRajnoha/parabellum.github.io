@@ -45,7 +45,6 @@ body {
 
 .footer-section {
     position: static;
-    display: flex;
     left: 0;
     right: 0;
     bottom: 0;
@@ -68,6 +67,10 @@ body {
 
 .col-50 {
     width: 50%;
+}
+
+.col-row{
+    display: flex;
 }
 
 h1 {
