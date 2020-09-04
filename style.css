@@ -32,8 +32,8 @@ body {
     background-image: url("/parabellum.github.io/img/Hero2.jpg");
 }
 
-div {
-}
+/*div {
+}*/
 
 .main-container {
     padding-top: 120px;
@@ -92,8 +92,8 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
-}
+/*h2 {
+}*/
 
 h3 {
     margin-bottom: 10px;
@@ -131,8 +131,8 @@ p {
     margin-bottom: 60px
 }
 
-img {
-}
+/*img {
+}*/
 
 .icon-big {
     width: 100px;
@@ -140,13 +140,13 @@ img {
     margin: 20px
 }
 
-.fb-icon {
+/*.fb-icon {*/
     /*background-image: url("/parabellum.github.io/img/icons/fb_icon.png");*/
-}
+/*}*/
 
-.insta-icon {
+/*.insta-icon {*/
     /*background-image: url("/parabellum.github.io/img/icons/insta_icon.png");*/
-}
+/*}*/
 
 .marquee-gallery {
   height: var(--marquee-height);
