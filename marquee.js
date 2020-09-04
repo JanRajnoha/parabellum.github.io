@@ -8,5 +8,4 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-const observer = window.lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
+CallLozadObserver();
