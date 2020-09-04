@@ -27,8 +27,13 @@
           media="all">
 
     <script type="text/javascript">
-        WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
+            WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
+            const observer = window.lozad(); // lazy loads elements with default selector as '.lozad'
+            observer.observe();
     </script>
+
+    <script type="text/javascript" 
+            src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <!--<link href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico"
           rel="shortcut icon"
@@ -48,43 +53,50 @@
 
             <img class="icon-big fb-icon"
                  loading="lazy"
-                 data-src="/parabellum.github.io/img/icons/fb_icon.png"
+                 src="/parabellum.github.io/img/icons/fb_icon.png"
                  alt="Facebook icon">
 
             <img class="icon-big insta-icon"
                  loading="lazy"
-                 data-src="/parabellum.github.io/img/icons/insta_icon.png"
+                 src="/parabellum.github.io/img/icons/insta_icon.png"
                  alt="Instagram icon">
         </div>
 
         <div class="marquee-gallery">
             <ul class="marquee-content">
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero2.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero2.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero3.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero3.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero4.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero4.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero5.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero5.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero6.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero6.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
                 <li>
-                    <img data-src="https://janrajnoha.cz/parabellum.github.io/img/Hero7.jpg"
+                    <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero7.jpg"
+                         class="lozad"
                          loading="lazy">
                 </li>
             </ul>
