@@ -162,16 +162,18 @@ img {
   align-items: center;
   /* text-align: center; */
   flex-shrink: 0;
-  width: var(--marquee-element-width);
+  margin: 1px;
   max-height: 100%;
   font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
   white-space: nowrap;
 }
 
 .marquee-content li img {
-  width: 100%;
-  height: 100%; 
-  border: 2px solid #eee;
+  width: 15vw;    
+   height: 100%;
+  display: block;
+  border: 1px solid #eee;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
