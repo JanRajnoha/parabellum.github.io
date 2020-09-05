@@ -191,6 +191,40 @@ img {
   object-fit: cover;
 }
 
+@media screen and (max-width:990px) {
+    .footer-container {
+        width: 60vw !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .footer-container {
+        width: 80vw !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .footer-container {
+        width: 95vw !important;
+    }
+
+    .footer-section {
+        position: static;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: rgba(107, 104, 104, 0.18);
+    }
+
+    .page-title {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
 @media (max-width: 600px) {
   html { font-size: 12px; }
   :root {
