@@ -203,6 +203,12 @@ img {
     }
 }
 
+@media screen and (max-width:1000) {
+    .footer-container {
+        width: 70vw !important;
+    }
+}
+
 @media screen and (max-width:750px) {
     .footer-container {
         width: 80vw !important;
