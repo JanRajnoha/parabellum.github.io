@@ -51,7 +51,7 @@ h1 {
     font-family: 'Roboto Condensed', sans-serif;
     display: inline-block;
     margin-right: auto;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     margin-left: auto;
     padding: 21px;
     border-style: solid;
@@ -66,6 +66,13 @@ h1 {
 
 h2 {
     font-size: 50px;
+}
+
+.page-subtitle {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 31px;
+    margin-bottom: 60px
 }
 
 h3 {
@@ -95,13 +102,6 @@ p {
     margin-bottom: 10px;
     line-height: 23px;
     font-weight: 300;
-}
-
-.page-subtitle {
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 31px;
-    margin-bottom: 60px
 }
 
 img {
@@ -216,6 +216,20 @@ img {
 }
 
 @media screen and (max-width:500px) {
+    .main-container {
+        padding-top: 30px;
+    }
+
+    .page-title {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .page-subtitle {
+        margin-bottom: 30px
+    }
+
     .footer-container {
         width: 95vw !important;
     }
