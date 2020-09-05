@@ -34,6 +34,22 @@ div {
     display: block;
 }
 
+.delimiter-10-right {
+    margin-right: 10px;
+}
+
+.delimiter-10-left {
+    margin-left: 10px;
+}
+
+.delimiter-10-top {
+    margin-top: 10px;
+}
+
+.delimiter-10-right {
+    margin-top: 10px;
+}
+
 .main-container {
     padding-top: 120px;
     margin-left: auto;
@@ -84,7 +100,6 @@ h3 {
 
 .coming-soon-prompt {
     display: block;
-    width: 100%;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
