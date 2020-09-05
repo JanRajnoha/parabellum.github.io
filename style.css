@@ -86,6 +86,8 @@ h3 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     float: left;
     border-style: none;
     border-width: 1px;
@@ -216,6 +218,21 @@ img {
     }
 }
 
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+
+  .page-title {
+      margin-top: 20px;
+      margin-right: 40px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width:500px) {
     .main-container {
         padding-top: 30px;
@@ -258,12 +275,4 @@ img {
     .col-50 {
         width: 100%;
     }
-}
-
-@media (max-width: 600px) {
-  html { font-size: 12px; }
-  :root {
-    --marquee-elements-displayed: 3;
-  }
-  .marquee:before, .marquee:after { width: 5rem; }
 }
