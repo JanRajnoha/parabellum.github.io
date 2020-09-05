@@ -30,8 +30,9 @@ body {
     background-image: url("/parabellum.github.io/img/Hero2.jpg");
 }
 
-/*div {
-}*/
+div {
+    display: none;
+}
 
 .main-container {
     padding-top: 120px;
@@ -97,8 +98,9 @@ h1 {
     text-transform: uppercase;
 }
 
-/*h2 {
-}*/
+h2 {
+    font-size: 50px;
+}
 
 h3 {
     margin-bottom: 10px;
@@ -136,8 +138,10 @@ p {
     margin-bottom: 60px
 }
 
-/*img {
-}*/
+img {
+    width: auto;
+    height: auto;
+}
 
 .icon-big {
     width: 100px;
