@@ -191,7 +191,7 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1200px) {
     .footer-container {
         width: 60vw !important;
     }
