@@ -156,7 +156,8 @@ p {
 /*}*/
 
 .marquee-gallery {
-  height: var(--marquee-height);
+  /*height: var(--marquee-height);*/
+  height: 100%;
   overflow: hidden;
   position: relative;
   margin-top: 30px;
@@ -187,13 +188,14 @@ p {
   align-items: center;
   /* text-align: center; */
   flex-shrink: 0;
-  max-height: 100%;
-  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  /*max-height: 100%;*/
+  /*font-size: calc(var(--marquee-height)*3/4); /* 5rem; */ 
   white-space: nowrap;
+  height: 100%;
 }
 
 .marquee-image {
-  width: 15vw !important;  
+  width: auto !important;  
   height: 100% !important;
   display: block;
   border: 2px solid transparent !important;
