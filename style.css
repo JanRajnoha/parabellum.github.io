@@ -42,39 +42,6 @@ div {
     text-align: center;
 }
 
-.footer-section {
-    position: static;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 30px;
-    background-color: rgba(107, 104, 104, 0.18);
-}
-
-.footer-container {
-    color: hsla(0, 0%, 100%, 0.52);
-    margin-left: auto;
-    margin-right: auto;
-    width: 40vw !important;
-}
-
-.copyright {
-    text-align: left;
-}
-
-.signature {
-    text-align: right;
-}
-
-.col-50 {
-    width: 50%;
-}
-
-.col-row{
-    display: flex;
-    width: 100%;
-}
-
 h1 {
     font-size: 69px;
 }
@@ -148,6 +115,39 @@ img {
     margin: 20px
 }
 
+.footer-section {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background-color: rgba(107, 104, 104, 0.18);
+}
+
+.footer-container {
+    color: hsla(0, 0%, 100%, 0.52);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw !important;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.signature {
+    text-align: right;
+}
+
+.col-row{
+    display: flex;
+    width: 100%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
 .marquee-gallery {
   height: 100%;
   overflow: hidden;
@@ -215,7 +215,7 @@ img {
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:500px) {
     .footer-container {
         width: 95vw !important;
     }
@@ -234,6 +234,18 @@ img {
     .page-title {
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .signature {
+        text-align: left;
+    }
+
+    .col-row{
+        display: block;
+    }
+    
+    .col-50 {
+        width: 100%;
     }
 }
 
