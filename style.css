@@ -31,7 +31,7 @@ body {
 }
 
 div {
-    display: none;
+    display: block;
 }
 
 .main-container {
