@@ -8,7 +8,7 @@ html {
 
 :root {
   --marquee-elements-displayed: 10;
-  --marquee-element-width: calc(150vw / var(--marquee-elements-displayed));
+  --marquee-width: 0;
   --marquee-animation-duration: calc(var(--marquee-elements) * 10s);
 }
 
@@ -193,7 +193,7 @@ img {
 
 @keyframes scrolling {
   0% { transform: translateX(0); }
-  100% { transform: translateX(10vw); }
+  100% { transform: translateX(val("--marquee-width")); }
 }
 
 .marquee-content li {
