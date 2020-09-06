@@ -114,6 +114,10 @@ h3 {
     width: 100%;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 p {
     font-weight: 300;
     line-height: 23px;
