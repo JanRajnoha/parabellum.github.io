@@ -28,6 +28,7 @@ function GetWidthOfDefaultItems()
             console.log(defaultElementsWidth);
         }
     }
+    console.log("GetWidth called");
 
     return defaultElementsWidth;
 }
