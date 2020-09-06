@@ -23,7 +23,10 @@ function GetWidthOfDefaultItems()
     for (let i = 0; i < defaultMarqueeElementsCount; i++)
     {
         if (defaultElements[i] != undefined)
+        {
             defaultElementsWidth += defaultElements[i].offsetWidth;
+            console.log(defaultElementsWidth);
+        }
     }
 
     return defaultElementsWidth;
