@@ -184,6 +184,7 @@ img {
   list-style: none;
   margin-top: 2px;
   margin-bottom: 2px;
+  padding: 0px;
 }
 
 .marquee-content:hover {
