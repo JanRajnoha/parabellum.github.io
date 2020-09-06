@@ -1,10 +1,10 @@
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
-const defaultElementsCount = NumberOfDefaultElements();
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 root.style.setProperty("--marquee-width", GetWidthOfDefaultItems());
 
+let index = 0;
 for(let i=0; i<marqueeElementsDisplayed; i++) 
 {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
@@ -21,7 +21,8 @@ function GetWidthOfDefaultItems()
 
     for (let i = 0; i < defaultElementsCount.length; i++)
     {
-        defaultElementsWidth += defaultElementsCount[i].offsetWidth;
+        if (defaultElementsCount[i] != undefined)
+            defaultElementsWidth += defaultElementsCount[i].offsetWidth;
     }
 
     return defaultElementsWidth;
