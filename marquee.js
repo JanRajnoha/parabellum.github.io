@@ -39,6 +39,12 @@ function ComputeMarqueeWidth()
     console.log("Compute called");
 }
 
+function ReRunMarquee()
+{
+    marqueeContent.style.setProperty("animation-play-state", "paused");
+    marqueeContent.style.setProperty("animation-play-state", "running");
+}
+
 
 
 
