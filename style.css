@@ -193,7 +193,7 @@ img {
 
 @keyframes scrolling {
   0% { transform: translateX(0); }
-  100% { transform: translateX(val("--marquee-width")); }
+  100% { transform: translateX(-1 * var("--marquee-width")); }
 }
 
 .marquee-content li {
