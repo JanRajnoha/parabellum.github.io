@@ -25,7 +25,6 @@ function GetWidthOfDefaultItems()
         if (defaultElements[i] != undefined)
         {
             defaultElementsWidth += defaultElements[i].offsetWidth;
-            console.log(defaultElementsWidth);
         }
     }
     console.log("GetWidth called");
