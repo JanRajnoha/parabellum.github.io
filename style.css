@@ -188,7 +188,11 @@ img {
   animation-play-state: running;
 }
 
-.marquee-content:hover {
+.marquee-animation {
+  animation-play-state: running;
+}
+
+.marquee-animation:hover {
   animation-play-state: paused;
 } 
 

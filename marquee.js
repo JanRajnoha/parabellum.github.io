@@ -43,6 +43,8 @@ function ReRunMarquee()
     marqueeContent.style.setProperty("animation-play-state", "paused");
     marqueeContent.style.setProperty("animation-play-state", "running");
     marqueeContent.style.animationPlayState = null;
+    marqueeContent.classList.remove("marquee-animation");
+    marqueeContent.classList.add("marquee-animation");
     console.log("ReRun called");
 }
 
