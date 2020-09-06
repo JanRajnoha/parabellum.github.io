@@ -31,6 +31,7 @@ function GetWidthOfDefaultItems()
 function ComputeMarqueeWidth()
 {
     root.style.setProperty("--marquee-width", GetWidthOfDefaultItems().toString().concat("px"));
+    console.log("Compute called");
 }
 
 
