@@ -18,11 +18,12 @@ function NumberOfDefaultElements()
 function GetWidthOfDefaultItems()
 {
     let defaultElementsWidth = 0;
+    let defaultElements = NumberOfDefaultElements();
 
-    for (let i = 0; i < defaultElementsCount.length; i++)
+    for (let i = 0; i < defaultElements.length; i++)
     {
-        if (defaultElementsCount[i] != undefined)
-            defaultElementsWidth += defaultElementsCount[i].offsetWidth;
+        if (defaultElements[i] != undefined)
+            defaultElementsWidth += defaultElements[i].offsetWidth;
     }
 
     return defaultElementsWidth;
