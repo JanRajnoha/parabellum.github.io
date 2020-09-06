@@ -1,15 +1,20 @@
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
-/*const defaultElementsCount = NumberOfDefaultElements();*/
+const defaultElementsCount = NumberOfDefaultElements();
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-root.style.setProperty("--marquee-width", marqueeContent.offsetWidth);
-
+root.style.setProperty("--marquee-width", defaultElementsCount.offsetWidth);
 
 for(let i=0; i<marqueeElementsDisplayed; i++) 
 {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+function NumberOfDefaultElements()
+{
+    return document.getElementsByClassName("marquee-item");
+}
+
 
 
 
@@ -27,11 +32,6 @@ var screenWidth = window.innerWidth;
 
 DuplicateElements(elementsWidth, screenWidth, numberOfElements)
 ExtendDisplayedElements(screenWidth)
-
-function NumberOfDefaultElements()
-{
-    return document.getElementsByClassName("marquee-item");
-}
 
 function DuplicateElements(elementsWidth, screenWidth, numberOfElements)
 {
