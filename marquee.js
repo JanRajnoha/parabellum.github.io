@@ -2,6 +2,7 @@ const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+const defaultMarqueeElementsCount = NumberOfDefaultElements().length
 
 let index = 0;
 for(let i=0; i<marqueeElementsDisplayed; i++) 
@@ -19,7 +20,7 @@ function GetWidthOfDefaultItems()
     let defaultElementsWidth = 0;
     let defaultElements = NumberOfDefaultElements();
 
-    for (let i = 0; i < defaultElements.length; i++)
+    for (let i = 0; i < defaultMarqueeElementsCount; i++)
     {
         if (defaultElements[i] != undefined)
             defaultElementsWidth += defaultElements[i].offsetWidth;
