@@ -2,7 +2,6 @@ const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-root.style.setProperty("--marquee-width", GetWidthOfDefaultItems().toString().concat("px"));
 
 let index = 0;
 for(let i=0; i<marqueeElementsDisplayed; i++) 
@@ -27,6 +26,11 @@ function GetWidthOfDefaultItems()
     }
 
     return defaultElementsWidth;
+}
+
+function ComputeMarqueeWidth()
+{
+    root.style.setProperty("--marquee-width", GetWidthOfDefaultItems().toString().concat("px"));
 }
 
 
