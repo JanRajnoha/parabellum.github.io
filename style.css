@@ -8,7 +8,7 @@ html {
 
 :root {
   --marquee-elements-displayed: 10;
-  --marquee-width: 0;
+  --marquee-width: 0px;
   --marquee-animation-duration: calc(var(--marquee-elements) * 10s);
 }
 
