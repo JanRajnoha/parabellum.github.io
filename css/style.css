@@ -306,11 +306,13 @@ img {
     height: 450px;
     margin: 0 auto;
     width: 100%;
-    }
-    .my-slider ul {
+}
+
+.my-slider-list {
     height: 450px;
     overflow: hidden;
-    }
-    .my-slider li {
+}
+
+.my-slider-item {
     float: left;
-    }
+}
