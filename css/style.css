@@ -300,3 +300,17 @@ img {
         width: 100%;
     }
 }
+
+
+.my-slider {
+    height: 450px;
+    margin: 0 auto;
+    width: 100%;
+    }
+    .my-slider ul {
+    height: 450px;
+    overflow: hidden;
+    }
+    .my-slider li {
+    float: left;
+    }
