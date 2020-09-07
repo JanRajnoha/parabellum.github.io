@@ -9,7 +9,7 @@ window.onload = (event) => {
         slideItems: '.my-slider-item',
         slideContainer: '.my-slider-list',
         slideDistance: 5,
-        slideDuratin: 800,
+        slideDuration: 800,
         resizable: true,
         pause: true
         });
