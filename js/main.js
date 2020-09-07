@@ -2,7 +2,7 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 window.onload = (event) => {
 /*    ComputeMarqueeWidth();
-    ReRunMarquee();*/
+    ReRunMarquee();
 
     $(function() {
         $('.de').imageslider({
@@ -13,5 +13,5 @@ window.onload = (event) => {
         resizable: true,
         pause: true
         });
-    });
+    });*/
 };
