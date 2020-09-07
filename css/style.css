@@ -187,18 +187,6 @@ img {
   animation-play-state: running;
 }
 
-
-.my-slider {
-    height: 450px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.my-slider-list {
-    height: 450px;
-    overflow: hidden;
-}
-
 .my-slider-item {
     float: left;
 }
@@ -212,7 +200,7 @@ img {
   white-space: nowrap;
 }
 
-.marquee-image {
+.maquee-imarge {
   border: 1px solid transparent !important;
   display: block;
   height: 15vh !important;
