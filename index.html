@@ -52,8 +52,10 @@
                 pause: true
             });
         });
-        
-        $('.gallery-default').simpleLightbox();
+
+        $('#pok').simpleLightbox({
+            links: 'a[rel="lightbox"]'
+        });
     </script>
 
 
@@ -172,8 +174,5 @@
             </div>
         </div>
     </div>
-    <script>
-        $('#pok').simpleLightbox();
-        </script>
 </body>
 </html>
