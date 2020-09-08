@@ -31,6 +31,9 @@
     <script src="/parabellum.github.io/js/jquery-simple-lightbox.js"
             defer></script>
 
+    <script src="/parabellum.github.io/js/simple-lightbox.js"
+            defer></script>
+
     <script src="/parabellum.github.io/js/main.js"
             defer></script>
 
@@ -53,9 +56,7 @@
             });
         });
 
-        $('#pok').simpleLightbox({
-            links: 'a[rel="lightbox"]'
-        });
+        var lightbox = $('.gallery-default a').simpleLightbox(/*{  options  }*/);
     </script>
 
 
@@ -90,7 +91,7 @@
                  alt="Instagram icon">
         </div>
 
-        <div class="marquee-gallery gallery-default" id="pok">
+        <div class="marquee-gallery gallery-default">
             <ul class="marquee-content">
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero2.jpg"
