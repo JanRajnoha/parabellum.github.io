@@ -25,9 +25,6 @@
 
     <script src="/parabellum.github.io/js/jquery.imageslider.js"></script>
 
-    <!--<script src="/parabellum.github.io/marquee.js"
-            defer></script>-->
-
     <script src="/parabellum.github.io/js/main.js"
             defer></script>
 
@@ -40,7 +37,7 @@
 
     <script>
         $(function() {
-            $('.de').imageslider({
+            $('.gallery-default').imageslider({
                 slideItems: '.marquee-item',
                 slideContainer: '.marquee-content',
                 slideDistance: 5,
@@ -49,6 +46,8 @@
                 pause: true
             });
         });
+        
+        $('.gallery-default').simpleLightbox();
     </script>
 
 
@@ -83,11 +82,12 @@
                  alt="Instagram icon">
         </div>
 
-        <div class="marquee-gallery de">
+        <div class="marquee-gallery gallery-default">
             <ul class="marquee-content">
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero2.jpg"
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero2-tiny.jpg"
                              class="marquee-image preview">
@@ -95,7 +95,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero.jpg"
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero-tiny.jpg"
                              class="marquee-image preview">
@@ -103,7 +104,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero3.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero3-tiny.jpg"
                             class="marquee-image preview">
@@ -111,7 +113,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero4.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero4-tiny.jpg"
                             class="marquee-image preview">
@@ -119,7 +122,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero5.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero5-tiny.jpg"
                             class="marquee-image preview">
@@ -127,7 +131,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero6.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero6-tiny.jpg"
                             class="marquee-image preview">
@@ -135,7 +140,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero7.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero7-tiny.jpg"
                             class="marquee-image preview">
@@ -143,7 +149,8 @@
                 </li>
                 <li class="marquee-item">
                     <a href="https://janrajnoha.cz/parabellum.github.io/img/Hero8.jpg" 
-                       class="marquee-image progressive replace disabled">
+                       class="marquee-image progressive replace disabled"
+                       rel="lightbox">
 
                         <img src="https://janrajnoha.cz/parabellum.github.io/img/Hero8-tiny.jpg"
                             class="marquee-image preview">
