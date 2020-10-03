@@ -9,7 +9,7 @@ html {
 :root {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
-  --marquee-animation-duration: calc(var(--marquee-elements) * 10s);
+  /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
 body {
@@ -220,7 +220,7 @@ img {
     }
 }
 
-@media screen and (max-width:1000) {
+@media screen and (max-width:1000px) {
     .footer-container {
         width: 70vw !important;
     }
