@@ -17,3 +17,18 @@ function RunMarquee()
         });
     });*/
 }
+
+
+function SwitchMenu() 
+{
+    var menuLinks = document.getElementById("menu");
+
+    if (menuLinks.style.display === "block")
+    {
+        menuLinks.style.display = "none";
+    } 
+    else 
+    {
+        menuLinks.style.display = "block";
+    }
+}
