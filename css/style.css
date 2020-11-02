@@ -25,7 +25,7 @@ body {
 
 .body-background {
     background-attachment: fixed;
-    background-image: url("/parabellum.github.io/img/Hero8.jpg");
+    background-image: url("/img/Hero8.jpg");
     background-position: center;
     background-size: cover;
 }
