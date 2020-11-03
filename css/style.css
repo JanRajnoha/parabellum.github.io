@@ -133,7 +133,6 @@ img {
 .icon-big {
     height: 100px;
     margin: 20px;
-    width: 100px;
 }
 
 .hide {
@@ -235,6 +234,11 @@ img {
     .footer-container {
         width: 80vw !important;
     }
+
+    .icon-big {
+        height: 100px;
+        margin: 20px;
+    }
 }
 
 /*@media (max-width: 600px) {
@@ -293,5 +297,10 @@ img {
     
     .col-50 {
         width: 100%;
+    }
+
+    .icon-big {
+        height: 85px;
+        margin: 10px;
     }
 }
