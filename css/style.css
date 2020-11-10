@@ -140,6 +140,10 @@ img {
     width: 0px;
 }
 
+.img-link {
+    color: transparent;
+}
+
 .footer-section {
     background-color: rgba(107, 104, 104, 0.18);
     bottom: 0;
