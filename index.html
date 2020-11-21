@@ -105,8 +105,11 @@
             $('.gallery-default a').simpleLightbox({
                 captionsData: 'alt'
             });
-        });
 
+            var dateobj = new Date(); 
+            var dateObject = dateobj.getFullYear(); 
+            document.getElementById("year").innerHTML = dateObject; 
+        });
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9PN9CGD8L"></script>
@@ -438,7 +441,7 @@
 
         <div class="footer-section">
             <div class="footer-container col-row">
-                <div class="copyright col-50">© 2021 Para Bellum Lounge Brno</div>
+                <div class="copyright col-50">© <span id="year"></span> Para Bellum Lounge Brno</div>
                 <div class="signature col-50">Web design by Mike</div>
             </div>
         </div>
