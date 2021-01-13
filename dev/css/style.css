@@ -34,6 +34,61 @@ div {
     display: block;
 }
 
+.navigation{
+    background: var(--mainColor);
+    display: grid;
+    padding: 30px;
+    color: var(--menuTextColor);
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    right: 0px;
+    left: 0px;
+    z-index: 999;
+    position: fixed;
+    background-color: rgba(168,140,0,0.8) !important;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-link {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: var(--textColor);
+}
+
+.logo {
+    position: relative;
+    margin: 0px;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 0px;
+}
+
+.menu-mobile {
+    display: none;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: bold;
+}
+
 .delimiter-10-right {
     margin-right: 10px;
 }

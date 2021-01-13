@@ -9,6 +9,18 @@ $(document).ready(function() {
     }
 
     try {
+        $("#map-placeholder").load("/dev/Support/map.html");
+    } catch (error) {
+        console.error(error);
+    }
+
+    try {
+        $("#contact-placeholder").load("/dev/Support/contact.html");
+    } catch (error) {
+        console.error(error);
+    }
+
+    try {
         $("#gallery-placeholder").load("/dev/Support/gallery.html");
     } catch (error) {
         console.error(error);
