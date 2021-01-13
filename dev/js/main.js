@@ -1,20 +1,9 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
-    $('.gallery-default a').simpleLightbox({
-        captionsData: 'alt'
-    });
+    $("#gallery-placeholder").load("/dev/Support/gallery.html");
 
-    $("#footer-placeholder").load("/dev/footer.html");
-});
-
-$('.gallery-default').imageslider({
-    slideItems: '.marquee-item',
-    slideContainer: '.marquee-content',
-    slideDistance: 5,
-    slideDuration: 250,
-    resizable: true,
-    pause: true
+    $("#footer-placeholder").load("/dev/Support/footer.html");
 });
 
 window.onload = (event) => {
