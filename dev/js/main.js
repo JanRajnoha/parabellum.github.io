@@ -8,20 +8,16 @@ $(document).ready(function() {
     $("#footer-placeholder").load("/dev/footer.html");
 });
 
+$('.gallery-default').imageslider({
+    slideItems: '.marquee-item',
+    slideContainer: '.marquee-content',
+    slideDistance: 5,
+    slideDuration: 250,
+    resizable: true,
+    pause: true
+});
+
 window.onload = (event) => {
-
-    $('.gallery-default').imageslider({
-        slideItems: '.marquee-item',
-        slideContainer: '.marquee-content',
-        slideDistance: 5,
-        slideDuration: 250,
-        resizable: true,
-        pause: true
-    });
-
-
-
-
     RunMarquee();
 };
 
