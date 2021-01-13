@@ -103,14 +103,11 @@
                 captionsData: 'alt'
             });
 
+            $("#footer-placeholder").load("/dev/footer.html");
+
             var dateobj = new Date(); 
             var dateObject = dateobj.getFullYear(); 
             document.getElementById("year").innerHTML = dateObject;
-
-            $(function(){
-                console.log($("#footer-placeholder"))
-                $("#footer-placeholder").load("/dev/footer.html");
-            });
         });
 
     </script>
