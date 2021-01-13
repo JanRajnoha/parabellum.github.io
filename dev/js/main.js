@@ -15,13 +15,13 @@ $(document).ready(function() {
     }
 
     try {
-        $("#contact-placeholder").load("/dev/Support/contact.html");
+        $("#gallery-placeholder").load("/dev/Support/gallery.html");
     } catch (error) {
         console.error(error);
     }
 
     try {
-        $("#gallery-placeholder").load("/dev/Support/gallery.html");
+        $("#contact-placeholder").load("/dev/Support/contact.html");
     } catch (error) {
         console.error(error);
     }
