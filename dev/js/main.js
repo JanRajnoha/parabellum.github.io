@@ -3,6 +3,12 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 $(document).ready(function() {
 
     try {
+        $("#nav-placeholder").load("/dev/Support/nav.html");
+    } catch (error) {
+        console.error(error);
+    }
+
+    try {
         $("#gallery-placeholder").load("/dev/Support/gallery.html");
     } catch (error) {
         console.error(error);
