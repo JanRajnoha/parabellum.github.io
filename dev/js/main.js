@@ -1,9 +1,18 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
-    $("#gallery-placeholder").load("/dev/Support/gallery.html");
 
-    $("#footer-placeholder").load("/dev/Support/footer.html");
+    try {
+        $("#gallery-placeholder").load("/dev/Support/gallery.html");
+    } catch (error) {
+        console.error(error);
+    }
+
+    try {
+        $("#footer-placeholder").load("/dev/Support/footer.html");
+    } catch (error) {
+        console.error(error);
+    }
 });
 
 window.onload = (event) => {
