@@ -1,6 +1,27 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
+$(document).ready(function() {
+    $('.gallery-default a').simpleLightbox({
+        captionsData: 'alt'
+    });
+
+    $("#footer-placeholder").load("/dev/footer.html");
+});
+
 window.onload = (event) => {
+
+    $('.gallery-default').imageslider({
+        slideItems: '.marquee-item',
+        slideContainer: '.marquee-content',
+        slideDistance: 5,
+        slideDuration: 250,
+        resizable: true,
+        pause: true
+    });
+
+
+
+
     RunMarquee();
 };
 
