@@ -30,8 +30,16 @@ body {
     background-size: cover;
 }
 
+.secondary-background {
+    background: var(--secondaryColor);
+}
+
 div {
     display: block;
+}
+
+.section {
+    padding: 50px;    
 }
 
 .navigation{
@@ -219,6 +227,16 @@ img {
 
 .img-link {
     color: transparent;
+}
+
+.map {
+    height: 500px;
+    padding: 0px;
+}
+
+.map-control {
+    width: 100%;
+    height: 100%;
 }
 
 .footer-section {
