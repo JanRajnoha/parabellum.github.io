@@ -149,6 +149,10 @@ img {
     width: auto;
 }
 
+.img-404 {
+    margin-bottom: 40px;
+}
+
 .icon-big {
     height: 100px;
     margin: 20px;
