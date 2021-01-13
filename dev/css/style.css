@@ -39,6 +39,7 @@ div {
     display: grid;
     padding: 30px;
     color: var(--menuTextColor);
+    font-family: Roboto Condensed;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto;
     grid-column-gap: 20px;
@@ -59,7 +60,6 @@ div {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: Montserrat;
     color: var(--textColor);
 }
 
