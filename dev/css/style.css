@@ -358,8 +358,7 @@ img {
 
 .marquee-gallery {
   height: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 0px;
   overflow: hidden;
   position: relative;
 }
