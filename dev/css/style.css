@@ -316,7 +316,7 @@ img {
 }
 
 .img-link {
-    color: transparent;
+    color: transparent !important;
 }
 
 .map {
