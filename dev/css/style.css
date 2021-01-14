@@ -41,7 +41,7 @@ body {
 }
 
 .secondary-background {
-    background: var(--secondaryColor);
+    background: var(--secondaryBackgroundColor);
 }
 
 div {
@@ -300,8 +300,9 @@ img {
 }
 
 .icon-contact {
-    height: 100px;
-    margin: 20px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .icon-footer {
