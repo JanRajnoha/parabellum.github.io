@@ -280,6 +280,10 @@ p {
     margin-bottom: 10px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 img {
     height: auto;
     width: auto;
@@ -293,6 +297,17 @@ img {
 .icon-big {
     height: 100px;
     margin: 20px;
+}
+
+.icon-contact {
+    height: 100px;
+    margin: 20px;
+}
+
+.icon-footer {
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .hide {
