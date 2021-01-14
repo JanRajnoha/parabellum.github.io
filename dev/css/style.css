@@ -19,6 +19,7 @@ html {
   --blockColor: black;
   --borderColor: #fff;
   --footerContainerColor: hsla(0, 0%, 100%, 0.52);
+  --linkHoverColor: dimgray;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
@@ -48,12 +49,8 @@ div {
     display: block;
 }
 
-.block a, .block a:visited {
-    color: var(--blockTextColor);
-}
-
-.block a:hover {
-    color: dimgray;
+.section {
+    padding: 50px;    
 }
 
 .block {
@@ -70,6 +67,14 @@ div {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.block a, .block a:visited {
+    color: var(--blockTextColor);
+}
+
+.block a:hover {
+    color: var(--linkHoverColor);
 }
 
 .block-text {
@@ -107,10 +112,6 @@ div {
     grid-column-start: 2;
 }
 
-.section {
-    padding: 50px;    
-}
-
 .navigation{
     background: var(--mainColor);
     display: grid;
@@ -124,8 +125,7 @@ div {
     left: 0px;
     z-index: 999;
     position: fixed;
-    background-color: rgba(168,140,0,0.8) !important;
-    backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--mainColor) !important;
 }
 
 .nav-link {
@@ -166,6 +166,22 @@ div {
     font-weight: bold;
 }
 
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.timeline {
+
+}
+
+.blur {    
+    backdrop-filter: saturate(180%) blur(20px)
+}
+
 .delimiter-10-right {
     margin-right: 10px;
 }
@@ -180,14 +196,6 @@ div {
 
 .delimiter-10-right {
     margin-top: 10px;
-}
-
-.main-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 940px;
-    padding-top: 120px;
-    text-align: center;
 }
 
 h1 {
@@ -496,7 +504,7 @@ img {
 }
 
 @media screen and (max-width:500px) {
-    .main-container {
+    .intro {
         padding-top: 30px;
     }
 
