@@ -72,6 +72,10 @@ div {
     margin-right: auto;
 }
 
+.block:nth-child(even) {
+    direction: rtl;
+}
+
 .b-60-40 {
     grid-template-columns: 3fr 2fr;
 }
@@ -109,10 +113,6 @@ div {
 
 .block-description {
 
-}
-
-.b-r {
-    grid-template-columns: 2fr 3fr;
 }
 
 .block-reverse > .block-image {
@@ -191,6 +191,18 @@ div {
 
 .timeline {
 
+}
+
+.opening-day {
+
+}
+
+.opening-day > .day {
+
+}
+
+.opening-day > .time {
+    
 }
 
 .blur {    
