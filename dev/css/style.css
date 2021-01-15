@@ -40,16 +40,20 @@ body {
     background-size: cover;
 }
 
-.secondary-background {
-    background: var(--secondaryBackgroundColor);
-}
-
 div {
     display: block;
 }
 
 .section {
     padding: 50px;    
+}
+
+.section:nth-child(odd) {
+    background: var(--secondaryBackgroundColor);    
+}
+
+.section:nth-child(even) {
+    background-color: var(--backgroundColor);   
 }
 
 .block {
@@ -66,6 +70,14 @@ div {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.b-60-40 {
+    grid-template-columns: 3fr 2fr;
+}
+
+.b-50-50 {
+    grid-template-columns: 1fr 1fr;
 }
 
 .block a, .block a:visited {
@@ -99,7 +111,7 @@ div {
 
 }
 
-.block-reverse {
+.b-r {
     grid-template-columns: 2fr 3fr;
 }
 
@@ -282,6 +294,10 @@ p {
     line-height: 23px;
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .bold {
