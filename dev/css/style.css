@@ -111,6 +111,10 @@ div {
     grid-column-start: 2;
 }
 
+.social-icons {
+    margin-top: 25px;
+}
+
 .navigation{
     background: var(--mainColor);
     display: grid;
