@@ -15,6 +15,12 @@ $(document).ready(function() {
     }
 
     try {
+        $("#opening-placeholder").load("/dev/Support/opening.html");
+    } catch (error) {
+        console.error(error);
+    }
+
+    try {
         $("#nav-placeholder").load("/dev/Support/nav.html");
     } catch (error) {
         console.error(error);
