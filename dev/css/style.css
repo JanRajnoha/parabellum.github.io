@@ -40,16 +40,20 @@ body {
     background-size: cover;
 }
 
-.secondary-background {
-    background: var(--secondaryBackgroundColor);
-}
-
 div {
     display: block;
 }
 
 .section {
     padding: 50px;    
+}
+
+.section:nth-child(odd) {
+    background: var(--secondaryBackgroundColor);    
+}
+
+.section:nth-child(even) {
+    background-color: var(--backgroundColor);   
 }
 
 .block {
@@ -66,6 +70,18 @@ div {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.block:nth-child(even) {
+    direction: rtl;
+}
+
+.b-60-40 {
+    grid-template-columns: 3fr 2fr;
+}
+
+.b-50-50 {
+    grid-template-columns: 1fr 1fr;
 }
 
 .block a, .block a:visited {
@@ -99,16 +115,16 @@ div {
 
 }
 
-.block-reverse {
-    grid-template-columns: 2fr 3fr;
-}
-
 .block-reverse > .block-image {
     grid-column-start: 1;
 }
 
 .block-reverse > .block-text {
     grid-column-start: 2;
+}
+
+.social-icons {
+    margin-top: 25px;
 }
 
 .navigation{
@@ -175,6 +191,19 @@ div {
 
 .timeline {
 
+}
+
+.opening-day {    
+    margin-top: 10px;
+}
+
+.opening-day > .day {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.opening-day > .time {
+    
 }
 
 .blur {    
@@ -280,6 +309,10 @@ p {
     margin-bottom: 10px;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -301,7 +334,7 @@ img {
 
 .icon-contact {
     height: 50px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .icon-footer {
