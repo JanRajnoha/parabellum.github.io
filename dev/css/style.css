@@ -190,10 +190,9 @@ div {
 }
 
 .timeline {
-    text-align: center;
 }
 
-.timeline > .timeline-part > .path-part {
+.timeline-part > .path-part {
     display: grid;
     height: 100%;
     grid-column-start: 2;
@@ -202,14 +201,14 @@ div {
     flex-direction: column;
 }
 
-.timeline > .timeline-part > .path-part > .path {
+.timeline-part > .path-part > .path {
     border-left: 3px dashed green;
     height: 100%;
     width: auto;
     align-self: center;
 }
 
-.timeline > .timeline-part > .path-part > .point {
+.timeline-part > .path-part > .point {
     width: 50px;
     text-align: center;
     border-radius: 50%;
@@ -219,11 +218,11 @@ div {
     margin-bottom: 0px;
 }
 
-.timeline > .timeline-part > .picture {
+.timeline-part > .picture {
 
 }
 
-.timeline > .timeline-part > .story {
+.timeline-part > .story {
 
 }
 
