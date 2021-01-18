@@ -195,7 +195,8 @@ div {
 
 .timeline-part {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    padding-top: 0px;
 }
 
 .timeline-part > .path-part {
@@ -231,6 +232,10 @@ div {
 
 .timeline-part > .story {
 
+}
+
+.timeline-part > .story .text-stick {
+    text-align: right;
 }
 
 .r-1 {
