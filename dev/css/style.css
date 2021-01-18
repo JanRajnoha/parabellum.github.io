@@ -194,7 +194,8 @@ div {
 }
 
 .timeline-part {
-    text-align: right;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 .timeline-part > .path-part {
