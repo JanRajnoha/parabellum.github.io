@@ -48,12 +48,12 @@ div {
     padding: 50px;    
 }
 
-.section:nth-child(even) {
-    background: var(--secondaryBackgroundColor);    
-}
-
 .section:nth-child(odd) {
     background-color: var(--backgroundColor);   
+}
+
+.section:nth-child(even) {
+    background: var(--secondaryBackgroundColor);    
 }
 
 .block {
