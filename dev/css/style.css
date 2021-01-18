@@ -48,11 +48,11 @@ div {
     padding: 50px;    
 }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
     background: var(--secondaryBackgroundColor);    
 }
 
-.section:nth-child(even) {
+.section:nth-child(odd) {
     background-color: var(--backgroundColor);   
 }
 
@@ -72,7 +72,7 @@ div {
     margin-right: auto;
 }
 
-.block:nth-child(even) {
+.block:nth-child(odd) {
     direction: rtl;
 }
 
@@ -191,6 +191,55 @@ div {
 
 .timeline {
 
+}
+
+.timeline > .timeline-part > .path-part {
+    display: flex;
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-template-rows: 1fr 10px 1fr;
+    flex-direction: column;
+}
+
+.timeline > .timeline-part > .path-part > .path {
+    border-left: 3px dashed green;
+    height: 45%;
+    width: auto;
+    align-self: center;
+}
+
+.timeline > .timeline-part > .path-part > .point {
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #09f;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.timeline > .timeline-part > .picture {
+
+}
+
+.timeline > .timeline-part > .story {
+
+}
+
+.r-1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.r-2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.r-3 {
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 .opening-day {    
