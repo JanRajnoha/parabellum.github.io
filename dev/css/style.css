@@ -72,7 +72,7 @@ div {
     margin-right: auto;
 }
 
-.block:nth-child(odd) {
+.block:nth-child(even) {
     direction: rtl;
 }
 
@@ -226,12 +226,13 @@ div {
 
 }
 
-.timeline-part:nth-child(odd) > .story .text-stick {
+/*.timeline-part:nth-child(odd) > .story .text-stick {
     text-align: right;
-}
+}*/
 
-.timeline-part:nth-child(even) > .story .text-stick {
-    text-align: right;
+.timeline-part:nth-child(even) > .story .text-stick {    
+    direction: ltr;
+    text-align: left;
 }
 
 .r-1 {
