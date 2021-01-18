@@ -190,7 +190,7 @@ div {
 }
 
 .timeline {
-
+    text-align: center;
 }
 
 .timeline > .timeline-part > .path-part {
