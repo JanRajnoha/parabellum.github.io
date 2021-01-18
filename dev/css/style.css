@@ -199,13 +199,15 @@ div {
     grid-row-start: 1;
     grid-template-rows: 1fr 50px 1fr;
     flex-direction: column;
+    justify-content: center;
 }
 
 .timeline-part > .path-part > .path {
-    border-left: 3px dashed green;
+    border: 2px dashed green;
     height: 100%;
-    width: auto;
+    width: 0px;
     align-self: center;
+    margin: 0 auto;
 }
 
 .timeline-part > .path-part > .point {
@@ -213,9 +215,8 @@ div {
     text-align: center;
     border-radius: 50%;
     background: #09f;
-    height: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    height: auto;
+    margin: 5px auto;
 }
 
 .timeline-part > .picture {
