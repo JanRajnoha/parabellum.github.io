@@ -1,27 +1,8 @@
 <script>
-    try {
-        $("#map-placeholder").load("/dev/Support/map.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#gallery-placeholder").load("/dev/Support/gallery.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#contact-placeholder").load("/dev/Support/contact.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#footer-placeholder").load("/dev/Support/footer.html");
-    } catch (error) {
-        console.error(error);
-    }
+    LoadDynamicPart("#map-placeholder", "/dev/Support/map.html")
+    LoadDynamicPart("#gallery-placeholder", "/dev/Support/gallery.html")
+    LoadDynamicPart("#contact-placeholder", "/dev/Support/contact.html")
+    LoadDynamicPart("#footer-placeholder", "/dev/Support/footer.html")
 </script>
 
 <!-- <div id="gallery-placeholder"></div>-->
