@@ -256,6 +256,7 @@ body .section:nth-child(even) {
 
 .opening-day > .day {
     font-size: 20px;
+    line-height: 28px;
     font-weight: bold;
 }
 
