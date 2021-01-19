@@ -63,12 +63,10 @@ $(document).ready(function() {
 function LoadDynamicPart(destination, source)
 {
     try {
-        document.getElementById(destination).outerHTML = "asd";
-
         fetch(source)
         .then(response => response.text())
         .then((data) => {
-            console.log(data)
+            document.getElementById(destination).outerHTML = data;
         })
         //$(destination).load(source);
     } catch (error) {
