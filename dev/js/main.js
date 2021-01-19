@@ -2,14 +2,14 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
 
-    LoadDynamicPart("#mainFooter-placeholder", "/dev/Support/mainFooter.html")
-    LoadDynamicPart("#otherFooter-placeholder", "/dev/Support/otherFooter.html")
-    LoadDynamicPart("#opening-placeholder", "/dev/Support/opening.html")
-    LoadDynamicPart("#nav-placeholder", "/dev/Support/nav.html")
-    LoadDynamicPart("#map-placeholder", "/dev/Support/map.html")
-    LoadDynamicPart("#gallery-placeholder", "/dev/Support/gallery.html")
-    LoadDynamicPart("#contact-placeholder", "/dev/Support/contact.html")
-    LoadDynamicPart("#footer-placeholder", "/dev/Support/footer.html")
+    LoadDynamicPart("mainFooter-placeholder", "/dev/Support/mainFooter.html")
+    LoadDynamicPart("otherFooter-placeholder", "/dev/Support/otherFooter.html")
+    LoadDynamicPart("opening-placeholder", "/dev/Support/opening.html")
+    LoadDynamicPart("nav-placeholder", "/dev/Support/nav.html")
+    LoadDynamicPart("map-placeholder", "/dev/Support/map.html")
+    LoadDynamicPart("gallery-placeholder", "/dev/Support/gallery.html")
+    LoadDynamicPart("contact-placeholder", "/dev/Support/contact.html")
+    LoadDynamicPart("footer-placeholder", "/dev/Support/footer.html")
 
 /*    try {
         $("#mainFooter-placeholder").load("/dev/Support/mainFooter.html");
