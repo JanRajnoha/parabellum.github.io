@@ -1,26 +1,8 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-<script>
-
-    var previousWidth = window.innerWidth
-
-    window.onresize = function(event)
-    {
-        var menuLinks = document.getElementById("menu");
-
-        if (window.innerWidth > 1000)
-        {
-            menuLinks.style.display = "block";
-        }
-        else if (previousWidth > 1000)
-        {
-            menuLinks.style.display = "none";
-        }
-        previousWidth = window.innerWidth
-    }; //upravit do js
-</script>
-
-<div class="navigation blur">
+<div class="navigation blur"
+     onresize="CheckWindowSize()">
+     
     <a href="/dev/index.html#" 
        class="nav-link logo">Para Bellum Lounge</a>
 
