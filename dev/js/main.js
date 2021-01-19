@@ -10,54 +10,6 @@ $(document).ready(function() {
     LoadDynamicPart("gallery")
     LoadDynamicPart("contact")
     LoadDynamicPart("footer")
-
-/*    try {
-        $("#mainFooter-placeholder").load("/dev/Support/mainFooter.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#otherFooter-placeholder").load("/dev/Support/otherFooter.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#opening-placeholder").load("/dev/Support/opening.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#nav-placeholder").load("/dev/Support/nav.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#map-placeholder").load("/dev/Support/map.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#gallery-placeholder").load("/dev/Support/gallery.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#contact-placeholder").load("/dev/Support/contact.html");
-    } catch (error) {
-        console.error(error);
-    }
-
-    try {
-        $("#footer-placeholder").load("/dev/Support/footer.html");
-    } catch (error) {
-        console.error(error);
-    }*/
 });
 
 function LoadDynamicPart(partName)

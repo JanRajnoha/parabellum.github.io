@@ -48,11 +48,11 @@ div {
     padding: 50px;    
 }
 
-body .section:nth-child(odd) {
+body .section:nth-of-type(odd) {
     background-color: var(--backgroundColor);   
 }
 
-body .section:nth-child(even) {
+body .section:nth-of-type(even) {
     background: var(--secondaryBackgroundColor);    
 }
 
@@ -72,7 +72,7 @@ body .section:nth-child(even) {
     margin-right: auto;
 }
 
-.block:nth-child(even) {
+.block:nth-of-type(even) {
     direction: rtl;
 }
 
@@ -230,7 +230,7 @@ body .section:nth-child(even) {
     text-align: right;
 }*/
 
-.timeline-part:nth-child(even) > .story .text-stick {    
+.timeline-part:nth-of-type(even) > .story .text-stick {    
     direction: ltr;
     text-align: left;
 }
