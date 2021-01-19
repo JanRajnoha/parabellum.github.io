@@ -14,10 +14,10 @@ html {
   --backgroundColor: #343434;
   --secondaryBackgroundColor: darkred;
   --footerBackgroundColor: rgba(107, 104, 104, 0.18);
-  --textColor: #333;
-  --titleTextColor: #fff;
-  --blockColor: black;
-  --borderColor: #fff;
+  --textColor: white;
+  --titleTextColor: white;
+  --blockColor: white;
+  --borderColor: white;
   --footerContainerColor: hsla(0, 0%, 100%, 0.52);
   --linkHoverColor: dimgray;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
