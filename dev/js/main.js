@@ -6,7 +6,7 @@ $(document).ready(function() {
     LoadDynamicPart("#otherFooter-placeholder", "/dev/Support/otherFooter.html")
     LoadDynamicPart("#opening-placeholder", "/dev/Support/opening.html")
     LoadDynamicPart("#nav-placeholder", "/dev/Support/nav.html")
-    LoadDynamicPart("#map-placeholder", "/dev/Support/map.html")    
+    LoadDynamicPart("#map-placeholder", "/dev/Support/map.html")
     LoadDynamicPart("#gallery-placeholder", "/dev/Support/gallery.html")
     LoadDynamicPart("#contact-placeholder", "/dev/Support/contact.html")
     LoadDynamicPart("#footer-placeholder", "/dev/Support/footer.html")
