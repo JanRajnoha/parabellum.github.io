@@ -63,7 +63,8 @@ $(document).ready(function() {
 function LoadDynamicPart(destination, source)
 {
     try {
-        $(destination).load(source);
+        document.getElementById(destination).innerHTML = "asd";
+        //$(destination).load(source);
     } catch (error) {
         console.error(error);
     }
