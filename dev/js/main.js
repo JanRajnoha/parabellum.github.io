@@ -24,10 +24,10 @@ function LoadDynamicPart(partName)
             document.getElementById(destination).outerHTML = data;
         })*/
 
-        var sourceResult = await fetch(source);
+        var sourceResult = fetch(source).then((res) => {return res;});
         if (sourceResult.ok)
         {
-            var data = await sourceResult.text();
+            var data = sourceResult.text().then((res) => {return res;});
             document.getElementById(destination).outerHTML = data;
         }
     } catch (error) {
