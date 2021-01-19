@@ -12,7 +12,30 @@ $(document).ready(function() {
     LoadDynamicPart("footer")
 });
 
-function LoadDynamicPart(partName)
+/*function LoadDynamicPart(partName)
+{
+    var destination = partName + "-placeholder"
+    var source = "/dev/Support/" + partName + ".html"
+
+    try {
+        fetch(source)
+        .then(response => response.text())
+        .then((data) => {
+            document.getElementById(destination).outerHTML = data;
+        })
+
+        var sourceResult = fetch(source).then((res) => {return res;});
+        if (sourceResult.ok)
+        {
+            var data = sourceResult.text().then((res) => {return res;});
+            document.getElementById(destination).outerHTML = data;
+        }
+    } catch (error) {
+        console.log("partName: " + partName + "\n\n" + error);
+    }
+}*/
+
+async function LoadDynamicPart(partName)
 {
     var destination = partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
@@ -34,29 +57,6 @@ function LoadDynamicPart(partName)
         console.log("partName: " + partName + "\n\n" + error);
     }
 }
-
-/*async function LoadDynamicPart(partName)
-{
-    var destination = partName + "-placeholder"
-    var source = "/dev/Support/" + partName + ".html"
-
-    try {
-        /*fetch(source)
-        .then(response => response.text())
-        .then((data) => {
-            document.getElementById(destination).outerHTML = data;
-        })
-
-        var sourceResult = fetch(source).then((res) => {return res;});
-        if (sourceResult.ok)
-        {
-            var data = sourceResult.text().then((res) => {return res;});
-            document.getElementById(destination).outerHTML = data;
-        }
-    } catch (error) {
-        console.log("partName: " + partName + "\n\n" + error);
-    }
-}*/
 
 function CheckWindowSize()
 {
