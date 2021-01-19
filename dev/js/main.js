@@ -47,10 +47,10 @@ async function LoadDynamicPart(partName)
             document.getElementById(destination).outerHTML = data;
         })*/
 
-        var sourceResult = fetch(source);
+        var sourceResult = await fetch(source);
         if (sourceResult.ok)
         {
-            var data = sourceResult.text();
+            var data = await sourceResult.text();
             document.getElementById(destination).outerHTML = data;
         }
     } catch (error) {
