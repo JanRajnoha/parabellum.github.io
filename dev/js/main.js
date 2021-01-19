@@ -24,7 +24,7 @@ function LoadDynamicPart(partName)
             document.getElementById(destination).outerHTML = data;
         })
     } catch (error) {
-        console.error(error);
+        console.log("partName: " + partName + "\n\n" + error);
     }
 }
 
