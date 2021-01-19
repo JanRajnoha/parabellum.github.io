@@ -19,7 +19,7 @@ html {
   --blockColor: white;
   --borderColor: white;
   --footerContainerColor: hsla(0, 0%, 100%, 0.52);
-  --linkHoverColor: dimgray;
+  --linkHoverColor: lightgray;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
@@ -255,12 +255,12 @@ body .section:nth-child(even) {
 }
 
 .opening-day > .day {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .opening-day > .time {
-    
+    font-size: 18px;
 }
 
 .blur {    
