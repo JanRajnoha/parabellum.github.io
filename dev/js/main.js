@@ -68,7 +68,6 @@ function LoadDynamicPart(destination, source)
         .then((data) => {
             document.getElementById(destination).outerHTML = data;
         })
-        //$(destination).load(source);
     } catch (error) {
         console.error(error);
     }
