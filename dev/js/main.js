@@ -2,14 +2,14 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
 
-    LoadDynamicPart("mainFooter-placeholder", "/dev/Support/mainFooter.html")
-    LoadDynamicPart("otherFooter-placeholder", "/dev/Support/otherFooter.html")
-    LoadDynamicPart("opening-placeholder", "/dev/Support/opening.html")
-    LoadDynamicPart("nav-placeholder", "/dev/Support/nav.html")
-    LoadDynamicPart("map-placeholder", "/dev/Support/map.html")
-    LoadDynamicPart("gallery-placeholder", "/dev/Support/gallery.html")
-    LoadDynamicPart("contact-placeholder", "/dev/Support/contact.html")
-    LoadDynamicPart("footer-placeholder", "/dev/Support/footer.html")
+    LoadDynamicPart("mainFooter")
+    LoadDynamicPart("otherFooter")
+    LoadDynamicPart("opening")
+    LoadDynamicPart("nav")
+    LoadDynamicPart("map")
+    LoadDynamicPart("gallery")
+    LoadDynamicPart("contact")
+    LoadDynamicPart("footer")
 
 /*    try {
         $("#mainFooter-placeholder").load("/dev/Support/mainFooter.html");
@@ -60,8 +60,11 @@ $(document).ready(function() {
     }*/
 });
 
-function LoadDynamicPart(destination, source)
+function LoadDynamicPart(partName)
 {
+    var destination = partName + "-placeholder"
+    var source = "/dev/Support/" + partName + ".html"
+
     try {
         fetch(source)
         .then(response => response.text())
