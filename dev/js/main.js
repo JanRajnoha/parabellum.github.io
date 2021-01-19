@@ -63,7 +63,7 @@ $(document).ready(function() {
 function LoadDynamicPart(destination, source)
 {
     try {
-        document.getElementById(destination).innerHTML = "asd";
+        document.getElementById(destination).outerHTML = "asd";
         //$(destination).load(source);
     } catch (error) {
         console.error(error);
