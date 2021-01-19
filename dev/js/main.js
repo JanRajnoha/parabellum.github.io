@@ -18,11 +18,18 @@ function LoadDynamicPart(partName)
     var source = "/dev/Support/" + partName + ".html"
 
     try {
-        fetch(source)
+        /*fetch(source)
         .then(response => response.text())
         .then((data) => {
             document.getElementById(destination).outerHTML = data;
-        })
+        })*/
+
+        var sourceResult = await fetch(source);
+        if (sourceResult.ok)
+        {
+            var data = await sourceResult.text();
+            document.getElementById(destination).outerHTML = data;
+        }
     } catch (error) {
         console.log("partName: " + partName + "\n\n" + error);
     }
