@@ -2,7 +2,16 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
 
-    try {
+    LoadDynamicPart("#mainFooter-placeholder", "/dev/Support/mainFooter.html")
+    LoadDynamicPart("#otherFooter-placeholder", "/dev/Support/otherFooter.html")
+    LoadDynamicPart("#opening-placeholder", "/dev/Support/opening.html")
+    LoadDynamicPart("#nav-placeholder", "/dev/Support/nav.html")
+    LoadDynamicPart("#map-placeholder", "/dev/Support/map.html")    
+    LoadDynamicPart("#gallery-placeholder", "/dev/Support/gallery.html")
+    LoadDynamicPart("#contact-placeholder", "/dev/Support/contact.html")
+    LoadDynamicPart("#footer-placeholder", "/dev/Support/footer.html")
+
+/*    try {
         $("#mainFooter-placeholder").load("/dev/Support/mainFooter.html");
     } catch (error) {
         console.error(error);
@@ -48,27 +57,37 @@ $(document).ready(function() {
         $("#footer-placeholder").load("/dev/Support/footer.html");
     } catch (error) {
         console.error(error);
-    }
+    }*/
 });
 
-window.onload = (event) => {
-    RunMarquee();
-};
-
-function RunMarquee()
+function LoadDynamicPart(destination, source)
 {
-    /*$(function() {
-        $('.de').imageslider({
-            slideItems: '.my-slider-item',
-            slideContainer: '.marquee-content',
-            slideDistance: 5,
-            slideDuratin: 800,
-            resizable: true,
-            pause: true
-        });
-    });*/
+    try {
+        $(destination).load(source);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
+function CheckWindowSize()
+{
+    var previousWidth = window.innerWidth
+
+    window.onresize = function(event)
+    {
+        var menuLinks = document.getElementById("menu");
+
+        if (window.innerWidth > 1000)
+        {
+            menuLinks.style.display = "block";
+        }
+        else if (previousWidth > 1000)
+        {
+            menuLinks.style.display = "none";
+        }
+        previousWidth = window.innerWidth
+    };
+}
 
 function SwitchMenu() 
 {
