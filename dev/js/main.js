@@ -13,7 +13,7 @@ $(document).ready(function() {
     LoadDynamicPart("footer")
 });
 
-async function LoadDynamicPart(partName)
+async function LoadDynamicPart(partName, attempt)
 {
     var destination = partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
@@ -28,16 +28,15 @@ async function LoadDynamicPart(partName)
     } catch (error) {
         console.log("partName: " + partName + "\n\n" + error);
 
-        await LoadDynamicPart(partName, 1)
+        if (attempt < 10)
+        {
+            await LoadDynamicPart(partName, attempt + 1)
+        }
     }
 }
 
 async function LoadDynamicPart(partName, attempt)
 {
-    if (attempt < 10)
-    {
-        await LoadDynamicPart(partName, attempt + 1)
-    }
 }
 
 function CheckWindowSize()
