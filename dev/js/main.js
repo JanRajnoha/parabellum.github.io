@@ -13,7 +13,7 @@ $(document).ready(function() {
     LoadDynamicPart("footer")
 });
 
-async function LoadDynamicPart(partName, attempt)
+async function LoadDynamicPart(partName, attempt = 0)
 {
     var destination = partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
