@@ -3,13 +3,14 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 $(document).ready(function() {
 
     LoadDynamicPart("nav")
+    LoadDynamicPart("aboutIndex")
     LoadDynamicPart("mainFooter")
-    /*LoadDynamicPart("otherFooter")
+    LoadDynamicPart("otherFooter")
     LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
     LoadDynamicPart("contact")
-    LoadDynamicPart("footer")*/
+    LoadDynamicPart("footer")
 });
 
 async function LoadDynamicPart(partName)
@@ -27,7 +28,15 @@ async function LoadDynamicPart(partName)
     } catch (error) {
         console.log("partName: " + partName + "\n\n" + error);
 
-        await LoadDynamicPart(partName)
+        await LoadDynamicPart(partName, 1)
+    }
+}
+
+async function LoadDynamicPart(partName, attempt)
+{
+    if (attempt < 10)
+    {
+        await LoadDynamicPart(partName, attempt + 1)
     }
 }
 
