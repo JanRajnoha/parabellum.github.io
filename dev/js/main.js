@@ -2,14 +2,14 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 $(document).ready(function() {
 
-    LoadDynamicPart("mainFooter")
-    LoadDynamicPart("otherFooter")
-    LoadDynamicPart("opening")
     LoadDynamicPart("nav")
+    LoadDynamicPart("mainFooter")
+    /*LoadDynamicPart("otherFooter")
+    LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
     LoadDynamicPart("contact")
-    LoadDynamicPart("footer")
+    LoadDynamicPart("footer")*/
 });
 
 async function LoadDynamicPart(partName)
