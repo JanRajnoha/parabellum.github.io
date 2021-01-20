@@ -18,12 +18,6 @@ async function LoadDynamicPart(partName)
     var source = "/dev/Support/" + partName + ".html"
 
     try {
-        /*fetch(source)
-        .then(response => response.text())
-        .then((data) => {
-            document.getElementById(destination).outerHTML = data;
-        })*/
-
         var sourceResult = await fetch(source);
         if (sourceResult.ok)
         {
