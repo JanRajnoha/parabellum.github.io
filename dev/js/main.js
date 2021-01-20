@@ -35,10 +35,6 @@ async function LoadDynamicPart(partName, attempt)
     }
 }
 
-async function LoadDynamicPart(partName, attempt)
-{
-}
-
 function CheckWindowSize()
 {
     var previousWidth = window.innerWidth
