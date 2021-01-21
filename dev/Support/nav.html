@@ -1,24 +1,4 @@
-<script>
-    function CheckWindowSize()
-{
-    var previousWidth = window.innerWidth
 
-    window.onresize = function(event)
-    {
-        var menuLinks = document.getElementById("menu");
-
-        if (window.innerWidth > 1000)
-        {
-            menuLinks.style.display = "block";
-        }
-        else if (previousWidth > 1000)
-        {
-            menuLinks.style.display = "none";
-        }
-        previousWidth = window.innerWidth
-    };
-}
-</script>
 
 <div class="navigation blur"
      onresize="CheckWindowSize()">

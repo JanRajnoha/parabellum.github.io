@@ -1,5 +1,7 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
+let previousWidth = window.innerWidth;
+
 $(document).ready(function() {
 
     LoadDynamicPart("nav")
@@ -37,10 +39,8 @@ async function LoadDynamicPart(partName, attempt = 0)
 
 function CheckWindowSize()
 {
-    var previousWidth = window.innerWidth
-
-    window.onresize = function(event)
-    {
+    /*window.onresize = function(event)
+    {*/
         var menuLinks = document.getElementById("menu");
 
         if (window.innerWidth > 1000)
@@ -52,7 +52,7 @@ function CheckWindowSize()
             menuLinks.style.display = "none";
         }
         previousWidth = window.innerWidth
-    };
+    //};
 }
 
 function SwitchMenu() 
