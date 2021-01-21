@@ -7,11 +7,11 @@ $(document).ready(function() {
     LoadDynamicPart("nav")
     LoadDynamicPart("aboutIndex")
     LoadDynamicPart("mainFooter")
-    /*LoadDynamicPart("otherFooter")
+    LoadDynamicPart("otherFooter")
     LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
-    LoadDynamicPart("contact")*/
+    LoadDynamicPart("contact")
     LoadDynamicPart("footer")
 });
 
