@@ -611,6 +611,10 @@ img {
         grid-row-end: 3;
         margin-left: 20px;
     }
+
+    .opening-day:first {    
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width:750px) {
