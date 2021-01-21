@@ -1,6 +1,6 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
-let previousWidth = window.innerWidth;
+//let previousWidth = window.innerWidth;
 
 $(document).ready(function() {
 
@@ -37,23 +37,7 @@ async function LoadDynamicPart(partName, attempt = 0)
     }
 }
 
-function CheckWindowSize()
-{
-    /*window.onresize = function(event)
-    {*/
-        var menuLinks = document.getElementById("menu");
 
-        if (window.innerWidth > 1000)
-        {
-            menuLinks.style.display = "block";
-        }
-        else if (previousWidth > 1000)
-        {
-            menuLinks.style.display = "none";
-        }
-        previousWidth = window.innerWidth
-    //};
-}
 
 function SwitchMenu() 
 {
