@@ -537,6 +537,10 @@ img {
         display: block;
     }
 
+    .opening-day:first {    
+        margin-top: 10px;
+    }
+
     .footer-container {
         width: 60vw !important;
     }
