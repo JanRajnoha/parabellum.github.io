@@ -1,8 +1,11 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 const MOBILE_MENU_MAX_WIDTH = 1000;
+let previousWidth = 0;
 
 $(document).ready(function() {
+
+    previousWidth = window.innerWidth;
 
     LoadDynamicPart("nav")
     LoadDynamicPart("aboutIndex")
