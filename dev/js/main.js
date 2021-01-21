@@ -37,7 +37,20 @@ async function LoadDynamicPart(partName, attempt = 0)
     }
 }
 
+function CheckWindowSize()
+{
+    var menuLinks = document.getElementById("menu");
 
+    if (window.innerWidth > 1000)
+    {
+        menuLinks.style.display = "block";
+    }
+    else if (previousWidth > 1000)
+    {
+        menuLinks.style.display = "none";
+    }
+    previousWidth = window.innerWidth
+}
 
 function SwitchMenu() 
 {

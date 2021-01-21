@@ -1,25 +1,4 @@
-<script>
-    var previousWidth = window.innerWidth
-
-    function CheckWindowSize()
-    {
-        var menuLinks = document.getElementById("menu");
-
-        if (window.innerWidth > 1000)
-        {
-            menuLinks.style.display = "block";
-        }
-        else if (previousWidth > 1000)
-        {
-            menuLinks.style.display = "none";
-        }
-        previousWidth = window.innerWidth;
-        console.log(window.innerWidth);
-    }
-</script>
-
-<div class="navigation blur"
-     onresize="CheckWindowSize()">
+<div class="navigation blur">
      
     <a href="/dev/index.html#" 
        class="nav-link logo">Para Bellum Lounge</a>
