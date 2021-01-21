@@ -666,8 +666,12 @@ img {
         right: 0;
     }
 
+    .copyright {
+        text-align: center;
+    }
+
     .signature {
-        text-align: left;
+        text-align: center;
     }
 
     .col-row{
