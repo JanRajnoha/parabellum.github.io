@@ -539,6 +539,15 @@ img {
 }
 
 @media screen and (max-width:1000px) {
+
+    :target 
+    {
+        display: block;    
+        position: relative;     
+        top: -60px;
+        visibility: hidden;
+    }
+
     .footer-container {
         width: 70vw !important;
     }
