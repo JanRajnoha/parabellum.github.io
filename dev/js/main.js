@@ -1,6 +1,6 @@
 WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
-//let previousWidth = window.innerWidth;
+const MOBILE_MENU_MAX_WIDTH = 1000;
 
 $(document).ready(function() {
 
@@ -41,11 +41,11 @@ function CheckWindowSize()
 {
     var menuLinks = document.getElementById("menu");
 
-    if (window.innerWidth > 1000)
+    if (window.innerWidth > MOBILE_MENU_MAX_WIDTH)
     {
         menuLinks.style.display = "block";
     }
-    else if (previousWidth > 1000)
+    else if (previousWidth > MOBILE_MENU_MAX_WIDTH)
     {
         menuLinks.style.display = "none";
     }
@@ -54,6 +54,11 @@ function CheckWindowSize()
 
 function SwitchMenu() 
 {
+    if (window.innerWidth > MOBILE_MENU_MAX_WIDTH)
+    {
+        return;
+    }
+
     var menuLinks = document.getElementById("menu");
 
     if (menuLinks.style.display === "block")
