@@ -622,17 +622,7 @@ img {
 }
 
 @media screen and (max-width:750px) {
-    .footer-container {
-        width: 80vw !important;
-    }
 
-    .icon-big {
-        height: 100px;
-        margin: 20px;
-    }
-}
-
-@media screen and (max-width:500px) {
     .intro {
         padding-top: 30px;
     }
