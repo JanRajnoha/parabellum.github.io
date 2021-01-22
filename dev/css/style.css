@@ -623,6 +623,10 @@ img {
   .col-50 {
     width: 100%;
   }
+  
+  .col-50:first-of-type {
+      margin-top: 5px;
+  }
 
   .block-description {
     padding-top: 0px;
