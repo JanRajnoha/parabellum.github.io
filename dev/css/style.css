@@ -82,8 +82,14 @@ div {
   padding-top: 50px;
 }
 
-.block:nth-of-type(even) {
+.section:nth-of-type(even) > .block:nth-of-type(even), 
+.section:nth-of-type(odd) > .block:nth-of-type(odd) {
   direction: rtl;
+}
+
+.section:nth-of-type(odd) > .block:nth-of-type(even), 
+.section:nth-of-type(even) > .block:nth-of-type(odd) {
+  direction: ltr;
 }
 
 .b-60-40 {
