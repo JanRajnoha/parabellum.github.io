@@ -124,6 +124,11 @@ div {
   grid-row-start: 1;
 }
 
+.section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
+.section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
+  direction: ltr;
+}
+
 .block-image {
   max-height: 450px;
   width: 100%;
@@ -422,7 +427,7 @@ img {
 
 .icon-contact {
   height: 50px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .icon-footer {
@@ -586,11 +591,6 @@ img {
   .nav-link {
     display: block;
     margin: 10px 0px 0px 0px;
-  }
-
-  .icon-contact {
-    margin-left: 0px;
-    margin-right: 20px;
   }
 
   .separate {    
