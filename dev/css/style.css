@@ -84,12 +84,14 @@ div {
 
 .section:nth-of-type(even) > .block:nth-of-type(even), 
 .section:nth-of-type(odd) > .block:nth-of-type(odd) {
-  direction: rtl;
+  direction: rtl;  
+  text-align: left;
 }
 
 .section:nth-of-type(odd) > .block:nth-of-type(even), 
 .section:nth-of-type(even) > .block:nth-of-type(odd) {
   direction: ltr;
+  text-align: right;
 }
 
 .b-60-40 {
@@ -397,7 +399,6 @@ p {
 }
 
 .text-right {
-  text-align: right;
 }
 
 .bold {
