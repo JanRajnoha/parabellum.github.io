@@ -11,12 +11,12 @@ html {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
   --mainColor: black;
-  --backgroundColor: #343434;
-  --secondaryBackgroundColor: darkred;
+  --backgroundColor: #ED1C24;
+  --secondaryBackgroundColor: #241623;
   --footerBackgroundColor: rgba(107, 104, 104, 0.18);
-  --textColor: white;
-  --titleTextColor: white;
-  --blockColor: white;
+  --textColor: #F1F7EE;
+  --titleTextColor: #F1F7EE;
+  --blockColor: #F1F7EE;
   --borderColor: white;
   --footerContainerColor: hsla(0, 0%, 100%, 0.52);
   --linkHoverColor: lightgray;
