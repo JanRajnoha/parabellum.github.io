@@ -10,7 +10,7 @@ html {
 :root {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
-  --mainColor: black;
+  --mainColor: #EF413E;
   --backgroundColor: #ED1C24;
   --secondaryBackgroundColor: #241623;
   --footerBackgroundColor: #FFB627;
