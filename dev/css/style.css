@@ -19,7 +19,8 @@ html {
   --blockColor: #F1F7EE;
   --borderColor: white;
   --footerContainerColor: #F1F7EE;
-  --linkHoverColor: #F1F7EE;
+  --linkHoverColor: #241623;
+  --linkVisitedColor: #F1F7EE;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
@@ -117,6 +118,10 @@ div {
 
 .block a:hover {
   color: var(--linkHoverColor);
+}
+
+.block a:visited {
+  color: var(--linkVisitedColor);
 }
 
 .block-text {
