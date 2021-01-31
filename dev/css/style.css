@@ -10,16 +10,16 @@ html {
 :root {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
-  --mainColor: #EF413E;
+  --mainColor: #241623;
   --backgroundColor: #ED1C24;
-  --secondaryBackgroundColor: #241623;
-  --footerBackgroundColor: #FFB627;
+  --secondaryBackgroundColor: #EF413E;
+  --footerBackgroundColor: #241623;
   --textColor: #F1F7EE;
   --titleTextColor: #F1F7EE;
   --blockColor: #F1F7EE;
   --borderColor: white;
   --footerContainerColor: #F1F7EE;
-  --linkHoverColor: lightgray;
+  --linkHoverColor: #F1F7EE;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
