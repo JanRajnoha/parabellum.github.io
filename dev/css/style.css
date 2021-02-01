@@ -22,9 +22,12 @@ html {
   --blockColor: #F1F7EE;
   --borderColor: white;
   --footerContainerColor: #F1F7EE;
-  --linkColor: #F3706E;
+  --linkColor: #241623;
+  --linkHoverColor: #694066;
+  --linkVisitedColor: #7B0A0E;
+  /*--linkColor: #F3706E;
   --linkHoverColor: #FBC28A;
-  --linkVisitedColor: #F99F44;
+  --linkVisitedColor: #F99F44;*/
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
