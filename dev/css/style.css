@@ -10,10 +10,10 @@ html {
 :root {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
-  --mainColor: #241623;
-  --backgroundColor: #ED1C24;
-  --secondaryBackgroundColor: #EF413E;
-  --footerBackgroundColor: #241623;
+  --mainColor: #694066;
+  --backgroundColor: #241623;
+  --secondaryBackgroundColor: #1A1019;
+  --footerBackgroundColor: #694066;
   --textColor: #F1F7EE;
   --titleTextColor: #F1F7EE;
   --blockColor: #F1F7EE;
