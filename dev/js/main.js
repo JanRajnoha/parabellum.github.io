@@ -27,7 +27,7 @@ function InsertCurrentYear()
 
 async function LoadDynamicPart(partName)
 {
-    var destination = partName + "-placeholder"
+    var destination = "#" + partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
 
     try {
