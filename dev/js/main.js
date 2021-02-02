@@ -38,6 +38,14 @@ function ReplacePlaceholder(partName)
     $(destination).outerHTML = inner;
 }
 
+function ReplacePlaceholder2(partName)
+{
+    var destination = "#" + partName + "-placeholder"
+
+    var inner = $(destination).innerHTML;
+    $(destination).outerHTML = inner;
+}
+
 async function LoadDynamicPart2(partName, attempt = 0)
 {
     var destination = partName + "-placeholder"
