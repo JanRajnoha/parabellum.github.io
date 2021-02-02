@@ -8,14 +8,14 @@ $(document).ready(function() {
     previousWidth = window.innerWidth;
 
     LoadDynamicPart("nav")
-    LoadDynamicPart("aboutIndex")
+    /*LoadDynamicPart("aboutIndex")*/
     LoadDynamicPart("mainFooter")
-    LoadDynamicPart("otherFooter")
-    LoadDynamicPart("opening")
+    /*LoadDynamicPart("otherFooter")*/
+   /* LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
     LoadDynamicPart("contact")
-    LoadDynamicPart("footer")
+    LoadDynamicPart("footer")*/
 });
 
 function InsertCurrentYear()
