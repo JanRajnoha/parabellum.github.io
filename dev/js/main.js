@@ -14,8 +14,8 @@ $(document).ready(function() {
    /* LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
-    LoadDynamicPart("contact")
-    LoadDynamicPart("footer")*/
+    LoadDynamicPart("contact")*/
+    LoadDynamicPart("footer")
 });
 
 async function LoadDynamicPart(partName)
