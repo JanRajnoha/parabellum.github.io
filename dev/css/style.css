@@ -90,7 +90,19 @@ div {
   padding-top: 50px;
 }
 
-.section:nth-of-type(even) > .block:nth-of-type(even), 
+body .section:nth-of-type(even) > .block:nth-of-type(even), 
+body .section:nth-of-type(odd) > .block:nth-of-type(odd) {
+  direction: rtl;  
+  text-align: left;
+}
+
+body .section:nth-of-type(odd) > .block:nth-of-type(even), 
+body .section:nth-of-type(even) > .block:nth-of-type(odd) {
+  direction: ltr;
+  text-align: right;
+}
+
+/*.section:nth-of-type(even) > .block:nth-of-type(even), 
 .section:nth-of-type(odd) > .block:nth-of-type(odd) {
   direction: rtl;  
   text-align: left;
@@ -100,7 +112,7 @@ div {
 .section:nth-of-type(even) > .block:nth-of-type(odd) {
   direction: ltr;
   text-align: right;
-}
+}*/
 
 .b-60-40 {
   grid-template-columns: 3fr 2fr;

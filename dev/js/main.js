@@ -25,25 +25,15 @@ function InsertCurrentYear()
     document.getElementById("year").innerHTML = dateObject;
 }
 
-async function LoadDynamicPart(partName, attempt = 0)
+async function LoadDynamicPart(partName)
 {
     var destination = partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
 
     try {
-        var sourceResult = await fetch(source);
-        if (sourceResult.ok)
-        {
-            var data = await sourceResult.text();
-            document.getElementById(destination).outerHTML = data;
-        }
+        $(destination).load(source);
     } catch (error) {
-        console.log("partName: " + partName + "\n\n" + error);
-
-        if (attempt < 10)
-        {
-            await LoadDynamicPart(partName, attempt + 1)
-        }
+        console.error(error);
     }
 }
 
