@@ -40,7 +40,7 @@ function ReplacePlaceholder(partName)
 
 function ReplacePlaceholder2(partName)
 {
-    var destination = "#" + partName + "-placeholder"
+    var destination = partName + "-placeholder"
 
     var inner = document.getElementById(destination).innerHTML;
     document.getElementById(destination).outerHTML = inner;
