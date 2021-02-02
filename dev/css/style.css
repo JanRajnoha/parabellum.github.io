@@ -204,8 +204,8 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 
 .menu {
   padding-top: 0px;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
@@ -564,6 +564,11 @@ img {
   .navigation {
     grid-template-columns: auto 1fr auto;
   }
+
+  .menu {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
   
   .footer-container {
     width: 50vw !important;
@@ -604,7 +609,6 @@ img {
   .navigation {
     padding: 20px;
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
   }
 
   .menu {
