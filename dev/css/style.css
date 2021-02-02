@@ -204,17 +204,18 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 
 .menu {
   padding-top: 0px;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
 .menu-mobile {
   display: none;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   font-weight: bold;
+  text-align: end;
 }
 
 .logo {
@@ -561,7 +562,7 @@ img {
 @media screen and (max-width:1350px) {
  
   .navigation {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
   }
   
   .footer-container {
@@ -613,11 +614,6 @@ img {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-  }
-
-  .menu-mobile {
-    margin: 0px;
-    text-align: end;
   }
 
   .nav-link {
