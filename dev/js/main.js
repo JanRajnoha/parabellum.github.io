@@ -32,6 +32,9 @@ async function LoadDynamicPart(partName)
 
     try {
         $(destination).load(source);
+
+        var inner = $(destination).innerHTML;
+        $(destination).outerHTML = inner;
     } catch (error) {
         console.error(error);
     }
