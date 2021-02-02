@@ -2,6 +2,7 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 const MOBILE_MENU_MAX_WIDTH = 1000;
 let previousWidth = 0;
+let parentsDynamic = {};
 
 $(document).ready(function() {
 
@@ -18,7 +19,7 @@ $(document).ready(function() {
     LoadDynamicPart("footer")
 });
 
-function LoadDynamicPart(partName)
+function LoadDynamicPart(partName, parentName)
 {
     var destination = "#" + partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
@@ -28,12 +29,27 @@ function LoadDynamicPart(partName)
     } catch (error) {
         console.error(error);
     }
-
-    console.log("Load " + partName);
+    
+    if (typeof parentName !== undefined)
+    {
+        if (parentsDynamic[parentName] == 0) 
+        {
+            parentsDynamic[parentName] = 1;
+        }
+        else
+        {
+            parentsDynamic[parentName]++;
+        }
+    }
 }
 
-function ReplacePlaceholder(partName)
+function ReplacePlaceholder(partName, parentName)
 {
+    parentsDynamic[parentName]--;
+    
+    while (parentsDynamic[partName] > 0)
+    {}
+
     var destination = partName + "-placeholder"
 
     var inner = document.getElementById(destination).innerHTML;
