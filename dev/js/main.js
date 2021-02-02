@@ -30,7 +30,7 @@ function LoadDynamicPart(partName, parentName)
         console.error(error);
     }
     
-    if (typeof parentName !== undefined)
+    if (parentName !== undefined)
     {
         if (parentsDynamic[parentName] == 0) 
         {
