@@ -8,7 +8,7 @@ $(document).ready(function() {
     previousWidth = window.innerWidth;
 
     LoadDynamicPart("nav")
-    /*LoadDynamicPart("aboutIndex")*/
+    LoadDynamicPart("aboutIndex")
     LoadDynamicPart("mainFooter")
     /*LoadDynamicPart("otherFooter")*/
    /* LoadDynamicPart("opening")
