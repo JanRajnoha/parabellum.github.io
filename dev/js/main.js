@@ -32,40 +32,10 @@ async function LoadDynamicPart(partName)
 
 function ReplacePlaceholder(partName)
 {
-    var destination = "#" + partName + "-placeholder"
-
-    var inner = $(destination).innerHTML;
-    $(destination).outerHTML = inner;
-}
-
-function ReplacePlaceholder2(partName)
-{
     var destination = partName + "-placeholder"
 
     var inner = document.getElementById(destination).innerHTML;
     document.getElementById(destination).outerHTML = inner;
-}
-
-async function LoadDynamicPart2(partName, attempt = 0)
-{
-    var destination = partName + "-placeholder"
-    var source = "/dev/Support/" + partName + ".html"
-
-    try {
-        var sourceResult = await fetch(source);
-        if (sourceResult.ok)
-        {
-            var data = await sourceResult.text();
-            document.getElementById(destination).outerHTML = data;
-        }
-    } catch (error) {
-        console.log("partName: " + partName + "\n\n" + error);
-
-        if (attempt < 10)
-        {
-            await LoadDynamicPart(partName, attempt + 1)
-        }
-    }
 }
 
 function CheckWindowSize()
