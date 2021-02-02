@@ -63,13 +63,21 @@ div {
   padding: 50px;  
 }
 
-.section:nth-of-type(odd) {
+body .section:nth-of-type(odd) {
+  background-color: var(--backgroundColor);   
+}
+
+body .section:nth-of-type(even) {
+  background: var(--secondaryBackgroundColor);  
+}
+
+/*.section:nth-of-type(odd) {
   background-color: var(--backgroundColor);   
 }
 
 .section:nth-of-type(even) {
   background: var(--secondaryBackgroundColor);  
-}
+}*/
 
 .block {
   color: var(--blockTextColor);
@@ -148,10 +156,15 @@ body .section:nth-of-type(even) > .block:nth-of-type(odd) {
   grid-row-start: 1;
 }
 
-.section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
-.section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
+body .section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
+body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   direction: ltr;
 }
+
+/*.section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
+.section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
+  direction: ltr;
+}*/
 
 .block-image {
   max-height: 450px;
