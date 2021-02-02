@@ -18,6 +18,13 @@ $(document).ready(function() {
     LoadDynamicPart("footer")
 });
 
+function InsertCurrentYear()
+{
+    var dateobj = new Date(); 
+    var dateObject = dateobj.getFullYear(); 
+    document.getElementById("year").innerHTML = dateObject;
+}
+
 async function LoadDynamicPart(partName, attempt = 0)
 {
     var destination = partName + "-placeholder"
