@@ -42,8 +42,8 @@ function ReplacePlaceholder2(partName)
 {
     var destination = "#" + partName + "-placeholder"
 
-    var inner = $(destination).innerHTML;
-    $(destination).outerHTML = inner;
+    var inner = document.getElementById(destination).innerHTML;
+    document.getElementById(destination).outerHTML = inner;
 }
 
 async function LoadDynamicPart2(partName, attempt = 0)
