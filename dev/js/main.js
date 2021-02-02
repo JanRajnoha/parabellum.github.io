@@ -32,13 +32,13 @@ function LoadDynamicPart(partName, parentName)
     
     if (parentName !== undefined)
     {
-        if (parentsDynamic[parentName] == 0) 
+        if (parentsDynamic[parentName] > 1) 
         {
-            parentsDynamic[parentName] = 1;
+            parentsDynamic[parentName]++;
         }
         else
         {
-            parentsDynamic[parentName]++;
+            parentsDynamic[parentName] = 1;
         }
     }
 }
