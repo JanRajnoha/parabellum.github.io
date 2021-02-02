@@ -28,6 +28,8 @@ function LoadDynamicPart(partName)
     } catch (error) {
         console.error(error);
     }
+
+    console.log("Load " + partName);
 }
 
 function ReplacePlaceholder(partName)
@@ -36,6 +38,8 @@ function ReplacePlaceholder(partName)
 
     var inner = document.getElementById(destination).innerHTML;
     document.getElementById(destination).outerHTML = inner;
+
+    console.log("Remove " + partName);
 }
 
 function CheckWindowSize()
