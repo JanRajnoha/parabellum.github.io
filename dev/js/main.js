@@ -32,12 +32,17 @@ async function LoadDynamicPart(partName)
 
     try {
         $(destination).load(source);
-
-        var inner = $(destination).innerHTML;
-        $(destination).outerHTML = inner;
     } catch (error) {
         console.error(error);
     }
+}
+
+function ReplacePlaceholder(partName)
+{
+    var destination = "#" + partName + "-placeholder"
+    
+    var inner = $(destination).innerHTML;
+    $(destination).outerHTML = inner;
 }
 
 async function LoadDynamicPart2(partName, attempt = 0)
