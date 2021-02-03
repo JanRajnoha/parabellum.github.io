@@ -25,9 +25,9 @@ html {
   /*--linkColor: #FAC6C8;
   --linkHoverColor: #FFEDC9;
   --linkVisitedColor: #D4B9D2;*/
-  --linkColor: #F3706E;
-  --linkHoverColor: #FBC28A;
-  --linkVisitedColor: #F99F44;
+  --linkColor: #F99F44;
+  --linkHoverColor: #FBB672;
+  --linkVisitedColor: #E67707;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
