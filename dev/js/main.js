@@ -2,8 +2,7 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 
 const MOBILE_MENU_MAX_WIDTH = 1000;
 let previousWidth = 0;
-let parentsDynamic = {};
-let parentsDynamicMap = new Map();
+let parentsDynamic = new Map();
 
 $(document).ready(function() {
 
@@ -20,45 +19,6 @@ $(document).ready(function() {
     LoadChildAndLogParent("footer")
 });
 
-function LoadDynamicPart(partName, parentName)
-{
-    var destination = "#" + partName + "-placeholder"
-    var source = "/dev/Support/" + partName + ".html"
-
-    try {
-        $(destination).load(source);
-    } catch (error) {
-        console.error(error);
-    }
-    
-    if (parentName !== undefined)
-    {
-        if (parentsDynamic[parentName] > 1) 
-        {
-            parentsDynamic[parentName]++;
-        }
-        else
-        {
-            parentsDynamic[parentName] = 1;
-        }
-    }
-}
-
-function ReplacePlaceholder(partName, parentName)
-{
-    parentsDynamic[parentName]--;
-    
-    while (parentsDynamic[partName] > 0)
-    {return;}
-
-    var destination = partName + "-placeholder"
-
-    var inner = document.getElementById(destination).innerHTML;
-    document.getElementById(destination).outerHTML = inner;
-
-    console.log("Remove " + partName);
-}
-
 function LoadChildAndLogParent(partName, parentName)
 {
     var destination = "#" + partName + "-placeholder"
@@ -72,7 +32,7 @@ function LoadChildAndLogParent(partName, parentName)
     
     if (parentName !== undefined)
     {
-        parentsDynamicMap.set(partName, parentName);
+        parentsDynamic.set(partName, parentName);
     }
 
     console.log("Load " + partName);
@@ -92,10 +52,10 @@ function RemovePlaceholder(partName)
 
 function RemoveParentPlaceholder(childName)
 {
-    parentName = parentsDynamicMap.get(childName);
-    parentsDynamicMap.delete(childName);
+    parentName = parentsDynamic.get(childName);
+    parentsDynamic.delete(childName);
     
-    if ([ ...parentsDynamicMap.values() ].filter(x => x == parentName).length = 0)
+    if ([ ...parentsDynamic.values() ].filter(x => x == parentName).length = 0)
     {
         RemovePlaceholder(parentName);
     }
