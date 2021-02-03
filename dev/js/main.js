@@ -48,7 +48,7 @@ function ReplacePlaceholder(partName, parentName)
     parentsDynamic[parentName]--;
     
     while (parentsDynamic[partName] > 0)
-    {}
+    {return;}
 
     var destination = partName + "-placeholder"
 
