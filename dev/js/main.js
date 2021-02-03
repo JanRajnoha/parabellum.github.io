@@ -3,20 +3,21 @@ WebFont.load({ google: { families: ["Roboto Condensed:regular,700"] } });
 const MOBILE_MENU_MAX_WIDTH = 1000;
 let previousWidth = 0;
 let parentsDynamic = {};
+let parentsDynamicMap = new Map();
 
 $(document).ready(function() {
 
     previousWidth = window.innerWidth;
 
-    LoadDynamicPart("nav")
-    LoadDynamicPart("aboutIndex")
-    LoadDynamicPart("mainFooter")
+    LoadChildAndLogParent("nav")
+    LoadChildAndLogParent("aboutIndex")
+    LoadChildAndLogParent("mainFooter")
     /*LoadDynamicPart("otherFooter")*/
    /* LoadDynamicPart("opening")
     LoadDynamicPart("map")
     LoadDynamicPart("gallery")
     LoadDynamicPart("contact")*/
-    LoadDynamicPart("footer")
+    LoadChildAndLogParent("footer")
 });
 
 function LoadDynamicPart(partName, parentName)
@@ -56,6 +57,48 @@ function ReplacePlaceholder(partName, parentName)
     document.getElementById(destination).outerHTML = inner;
 
     console.log("Remove " + partName);
+}
+
+function LoadChildAndLogParent(partName, parentName)
+{
+    var destination = "#" + partName + "-placeholder"
+    var source = "/dev/Support/" + partName + ".html"
+
+    try {
+        $(destination).load(source);
+    } catch (error) {
+        console.error(error);
+    }
+    
+    if (parentName !== undefined)
+    {
+        parentsDynamicMap.set(partName, parentName);
+    }
+
+    console.log("Load " + partName);
+}
+
+function RemovePlaceholder(partName)
+{
+    var destination = partName + "-placeholder"
+
+    var inner = document.getElementById(destination).innerHTML;
+    document.getElementById(destination).outerHTML = inner;
+
+    console.log("Remove " + partName);
+    
+    RemoveParentPlaceholder(partName)
+}
+
+function RemoveParentPlaceholder(childName)
+{
+    parentName = parentsDynamicMap.get(childName);
+    parentsDynamicMap.delete(childName);
+    
+    if ([ ...parentsDynamicMap.values() ].filter(x => x == parentName).length = 0)
+    {
+        RemovePlaceholder(parentName);
+    }
 }
 
 function CheckWindowSize()
