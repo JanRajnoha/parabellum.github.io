@@ -55,7 +55,7 @@ function RemoveParentPlaceholder(childName)
     parentName = parentsDynamic.get(childName);
     parentsDynamic.delete(childName);
     
-    if ([ ...parentsDynamic.values() ].filter(x => x == parentName).length = 0)
+    if ([ ...parentsDynamic.values() ].filter(x => x == parentName).length == 0)
     {
         RemovePlaceholder(parentName);
     }
