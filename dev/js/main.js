@@ -45,14 +45,11 @@ function RemovePlaceholder(partName)
 function LoadData(destination, source)
 {
     try {
-        $(destination).load(source, function(response, 
-                                                         status, http){ 
-                    if(status == "success") 
-                        alert("Content loaded successfully!"); 
-                    if(status == "error") 
-                        alert("Error: " + http.status + ": "  
-                                                       + http.statusText); 
-                });
+        $(destination).load(source, 
+                            function(response, status, http){ 
+                                if(status == "error") 
+                                    console.error("Error: " + http.status + ": " + http.statusText); 
+                            });
     } catch (error) {
         console.error(error);
     }
