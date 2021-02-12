@@ -48,10 +48,14 @@ function LoadData(destination, source)
 function RemovePlaceholder(partName, doWorkAfterRemove)
 {
     var destination = partName + "-placeholder"
-
-    var inner = document.getElementById(destination).innerHTML;
-    document.getElementById(destination).outerHTML = inner;
     
+    try
+    {
+        var inner = document.getElementById(destination).innerHTML;
+        document.getElementById(destination).outerHTML = inner;
+    }
+    catch {}    
+
     RemoveParentPlaceholder(partName, doWorkAfterRemove)
 }
 
