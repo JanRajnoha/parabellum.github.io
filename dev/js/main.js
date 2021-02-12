@@ -23,19 +23,13 @@ function LoadChildAndLogParent(partName, parentName)
 {
     var destination = "#" + partName + "-placeholder"
     var source = "/dev/Support/" + partName + ".html"
-
-    try {
-        $(destination).load(source);
-    } catch (error) {
-        console.error(error);
-    }
+    
+    LoadData(destination, source);
     
     if (parentName !== undefined)
     {
         parentsDynamic.set(partName, parentName);
     }
-
-    console.log("Load " + partName);
 }
 
 function RemovePlaceholder(partName)
@@ -44,10 +38,17 @@ function RemovePlaceholder(partName)
 
     var inner = document.getElementById(destination).innerHTML;
     document.getElementById(destination).outerHTML = inner;
-
-    console.log("Remove " + partName);
     
     RemoveParentPlaceholder(partName)
+}
+
+function LoadData(destination, source)
+{
+    try {
+        $(destination).load(source);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 function RemoveParentPlaceholder(childName)
