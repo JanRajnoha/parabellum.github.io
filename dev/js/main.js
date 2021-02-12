@@ -11,11 +11,7 @@ $(document).ready(function() {
     LoadChildAndLogParent("nav")
     LoadChildAndLogParent("aboutIndex")
     LoadChildAndLogParent("mainFooter")
-    /*LoadDynamicPart("otherFooter")*/
-   /* LoadDynamicPart("opening")
-    LoadDynamicPart("map")
-    LoadDynamicPart("gallery")
-    LoadDynamicPart("contact")*/
+    /*LoadDynamicPart("otherFooter")*/   /* LoadDynamicPart("opening")    LoadDynamicPart("map")    LoadDynamicPart("gallery")    LoadDynamicPart("contact")*/
     LoadChildAndLogParent("footer")
 });
 
@@ -26,10 +22,7 @@ function LoadChildAndLogParent(partName, parentName)
     
     LoadData(destination, source);
     
-    if (parentName !== undefined)
-    {
-        parentsDynamic.set(partName, parentName);
-    }
+    if (parentName !== undefined) parentsDynamic.set(partName, parentName);
 }
 
 function LoadData(destination, source)
@@ -48,36 +41,22 @@ function LoadData(destination, source)
 function RemovePlaceholder(partName, doWorkAfterRemove)
 {
     var destination = partName + "-placeholder"
-    
-    try
-    {
-        var inner = document.getElementById(destination).innerHTML;
-        document.getElementById(destination).outerHTML = inner;
-    }
-    catch {}    
+
+    var inner = document.getElementById(destination).innerHTML;
+    document.getElementById(destination).outerHTML = inner; 
 
     RemoveParentPlaceholder(partName, doWorkAfterRemove)
 }
 
 function RemoveParentPlaceholder(childName, doWorkAfterRemove)
 {    
-    if (doWorkAfterRemove === undefined)
-    {
-        return;
-    }
-    
     parentName = parentsDynamic.get(childName);
     parentsDynamic.delete(childName);
     
-    if ([ ...parentsDynamic.values() ].filter(x => x == parentName).length == 0)
-    {
+    if (parentName !== undefined && [ ...parentsDynamic.values() ].filter(x => x == parentName).length == 0)
         RemovePlaceholder(parentName);
-    }
     
-    if (doWorkAfterRemove !== undefined)
-    {
-        doWorkAfterRemove();
-    }
+    if (doWorkAfterRemove !== undefined) doWorkAfterRemove();
 }
 
 function CheckWindowSize()
@@ -85,31 +64,17 @@ function CheckWindowSize()
     var menuLinks = document.getElementById("menu");
 
     if (window.innerWidth > MOBILE_MENU_MAX_WIDTH)
-    {
         menuLinks.style.display = "block";
-    }
     else if (previousWidth > MOBILE_MENU_MAX_WIDTH)
-    {
         menuLinks.style.display = "none";
-    }
+        
     previousWidth = window.innerWidth
 }
 
 function SwitchMenu() 
 {
-    if (window.innerWidth > MOBILE_MENU_MAX_WIDTH)
-    {
-        return;
-    }
+    if (window.innerWidth > MOBILE_MENU_MAX_WIDTH) return;
 
     var menuLinks = document.getElementById("menu");
-
-    if (menuLinks.style.display === "block")
-    {
-        menuLinks.style.display = "none";
-    } 
-    else 
-    {
-        menuLinks.style.display = "block";
-    }
+    menuLinks.style.display = (menuLinks.style.display === "block") ? "none" : "block";
 }
