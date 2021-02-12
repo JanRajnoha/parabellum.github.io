@@ -60,7 +60,12 @@ function RemovePlaceholder(partName, doWorkAfterRemove)
 }
 
 function RemoveParentPlaceholder(childName, doWorkAfterRemove)
-{
+{    
+    if (doWorkAfterRemove === undefined)
+    {
+        return;
+    }
+    
     parentName = parentsDynamic.get(childName);
     parentsDynamic.delete(childName);
     
