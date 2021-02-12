@@ -218,7 +218,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   text-align: end;
 }
 
-.logo {
+.logo-menu {
   margin: 0px;
   position: relative;
   grid-column-start: 1;
@@ -476,6 +476,10 @@ img {
 
 .img-link {
   color: transparent !important;
+}
+
+.logo-page {
+    margin-bottom: 40px;
 }
 
 .map {
