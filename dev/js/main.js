@@ -65,7 +65,7 @@ function RemoveParentPlaceholder(childName, doWorkAfterRemove)
         RemovePlaceholder(parentName);
     }
     
-    if (parentName !== undefined)
+    if (doWorkAfterRemove !== undefined)
     {
         doWorkAfterRemove();
     }
