@@ -65,7 +65,10 @@ function RemoveParentPlaceholder(childName, doWorkAfterRemove)
         RemovePlaceholder(parentName);
     }
     
-    doWorkAfterRemove();
+    if (parentName !== undefined)
+    {
+        doWorkAfterRemove();
+    }
 }
 
 function CheckWindowSize()
