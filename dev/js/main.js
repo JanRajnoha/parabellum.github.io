@@ -32,16 +32,6 @@ function LoadChildAndLogParent(partName, parentName)
     }
 }
 
-function RemovePlaceholder(partName)
-{
-    var destination = partName + "-placeholder"
-
-    var inner = document.getElementById(destination).innerHTML;
-    document.getElementById(destination).outerHTML = inner;
-    
-    RemoveParentPlaceholder(partName)
-}
-
 function LoadData(destination, source)
 {
     try {
@@ -53,6 +43,16 @@ function LoadData(destination, source)
     } catch (error) {
         console.error(error);
     }
+}
+
+function RemovePlaceholder(partName, doWorkAfterRemove)
+{
+    var destination = partName + "-placeholder"
+
+    var inner = document.getElementById(destination).innerHTML;
+    document.getElementById(destination).outerHTML = inner;
+    
+    RemoveParentPlaceholder(partName, doWorkAfterRemove)
 }
 
 function RemoveParentPlaceholder(childName, doWorkAfterRemove)
