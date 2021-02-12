@@ -55,7 +55,7 @@ function LoadData(destination, source)
     }
 }
 
-function RemoveParentPlaceholder(childName)
+function RemoveParentPlaceholder(childName, doWorkAfterRemove)
 {
     parentName = parentsDynamic.get(childName);
     parentsDynamic.delete(childName);
@@ -64,6 +64,8 @@ function RemoveParentPlaceholder(childName)
     {
         RemovePlaceholder(parentName);
     }
+    
+    doWorkAfterRemove();
 }
 
 function CheckWindowSize()
