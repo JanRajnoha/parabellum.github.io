@@ -1,4 +1,4 @@
-<svg viewBox="0 0 227 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="227" height="116" viewBox="0 0 227 116" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <g opacity="0.85">
 <path opacity="0.85" d="M39.4302 87.46C39.2102 87.79 38.4902 87.79 38.4302 87.32C38.9402 87.76 38.9902 87.18 39.0902 86.91H39.0002C39.1602 86.69 39.6102 86.76 39.5502 86.56C39.3902 86.93 39.8402 87.43 40.2302 87.08C40.3109 86.9885 40.3633 86.8755 40.3811 86.7548C40.3988 86.6341 40.3811 86.5108 40.3302 86.4L40.1102 86.57C40.3302 86.5 40.4402 85.92 40.7702 86.1C41.2102 85.1 39.9702 84.53 39.8402 83.7C40.0802 84.32 40.6302 84.22 40.8402 84.89C40.9334 85.3088 40.9398 85.7423 40.8589 86.1636C40.7781 86.585 40.6117 86.9854 40.3702 87.34C40.0002 87.42 39.1602 88.11 39.4302 87.46Z" fill="#E8272C"/>
@@ -8370,9 +8370,9 @@
 <path opacity="0.85" d="M78.3099 42.74C78.4299 42.62 78.7599 42.43 78.8999 42.61C79.0399 42.79 78.8099 42.88 78.6499 42.96C78.5514 42.9846 78.4484 42.9846 78.3499 42.96C78.2199 42.93 78.2699 42.81 78.3099 42.74Z" fill="#E8272C"/>
 <path opacity="0.3" d="M78.6702 42.86C78.6702 42.77 78.4802 42.86 78.4102 42.77L78.5502 42.63C78.4502 42.86 78.7302 42.53 78.8202 42.71C78.9102 42.89 78.8202 42.84 78.6102 42.91L78.6702 42.86Z" fill="white"/>
 </g>
-<text fill="#231F20" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="107.533" y="64.4399"> </tspan></text>
-<text fill="#E9262B" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="118.888" y="64.4399">B</tspan></text>
-<text fill="#F1F7EE" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="41.8901" y="64.4399">Para</tspan><tspan x="150.132" y="64.4399">ellum</tspan></text>
+<text fill="#231F20" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="107.533" y="72.4399"> </tspan></text>
+<text fill="#E9262B" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="118.888" y="72.4399">B</tspan></text>
+<text fill="#F1F7EE" xml:space="preserve" style="white-space: pre" font-family="Fresh Script" font-size="34" letter-spacing="0em"><tspan x="41.8901" y="72.4399">Para</tspan><tspan x="150.132" y="72.4399">ellum</tspan></text>
 </g>
 <defs>
 <clipPath id="clip0">
