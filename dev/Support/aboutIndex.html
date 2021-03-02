@@ -1,11 +1,14 @@
 <script>
     $(document).ready(function() {        
-        RemovePlaceholder("aboutIndex");
+        RemovePlaceholder("aboutIndex", function() {LoadData('#logo-big', '/dev/img/web/logo-big.svg');});
     });
+    
+    
 </script>
 
 <div class="intro">
-    <h1 class="page-title">Para Bellum</h1>
+    <div id="logo-big"
+         class="logo-page"></div>
 
     <h2 class="page-subtitle">Prepare for hookah</h2>
 

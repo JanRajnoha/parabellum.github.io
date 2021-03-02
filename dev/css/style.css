@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Fresh Script;
+  src: url(/dev/fonts/FreshScript.woff);
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -10,25 +15,19 @@ html {
 :root {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
-  --mainColor: #994F05;
+  --mainColor: #F1F7EE;
   --backgroundColor: #1A1019;
   --secondaryBackgroundColor: #110B11;
-  /*--mainColor: #E67707;
-  --backgroundColor: #994F05;
-  --footerBackgroundColor: #694066;
-  --secondaryBackgroundColor: #C06306;*/
-  --footerBackgroundColor: #994F05;
+  --footerBackgroundColor: #F1F7EE;
   --textColor: #F1F7EE;
   --titleTextColor: #F1F7EE;
   --blockColor: #F1F7EE;
   --borderColor: #E67707;
-  --footerContainerColor: #F1F7EE;
-  /*--linkColor: #FAC6C8;
-  --linkHoverColor: #FFEDC9;
-  --linkVisitedColor: #D4B9D2;*/
-  --linkColor: #F99F44;
-  --linkHoverColor: #FBB672;
-  --linkVisitedColor: #E67707;
+  --menuTextColor: #1A1019;
+  --footerTextColor: #1A1019;
+  --linkColor: #EE444A;
+  --linkHoverColor: #EB232A;
+  --linkVisitedColor: #F37C80;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
@@ -219,7 +218,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   text-align: end;
 }
 
-.logo {
+.logo-menu {
   margin: 0px;
   position: relative;
   grid-column-start: 1;
@@ -239,7 +238,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--textColor);
+  color: var(--menuTextColor);
 }
 
 .intro {
@@ -479,6 +478,10 @@ img {
   color: transparent !important;
 }
 
+.logo-page {
+    margin-bottom: 40px;
+}
+
 .map {
   height: 500px;
   padding: 0px;
@@ -508,7 +511,7 @@ img {
 }
 
 .footer-container {
-  color: var(--footerContainerColor);
+  color: var(--footerTextColor);
   margin-left: auto;
   margin-right: auto;
   width: 40vw !important;
