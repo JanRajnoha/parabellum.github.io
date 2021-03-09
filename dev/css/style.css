@@ -184,6 +184,10 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 
 }
 
+.fresh-font {
+    font-family: "Fresh Script";
+}
+
 .social-icons {
   margin-top: 25px;
 }
