@@ -403,10 +403,11 @@ h2 {
 
 .page-subtitle {
   color: var(--titleTextColor);
-  margin-bottom: 60px;
-  font-size: 31px;
+  /*margin-bottom: 60px;*/
+  margin-top: 0px;
+  font-size: 70px;
   font-weight: 300;
-  line-height: 30px;
+  /*line-height: 30px;*/
 }
 
 h3 {
