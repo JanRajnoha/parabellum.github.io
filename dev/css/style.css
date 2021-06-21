@@ -696,7 +696,8 @@ img {
   }
 
   .page-subtitle {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-size: 30px;
   }
 
   .icon-big {
