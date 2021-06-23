@@ -514,7 +514,7 @@ img {
 }
 
 .footer-section {
-  background-color: var(--footerBackgroundColor);
+  background-color: var(--mainColor);
   left: 0;
   bottom: 0;
   right: 0;
