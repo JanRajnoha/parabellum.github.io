@@ -16,8 +16,8 @@ html {
   --marquee-elements-displayed: 10;
   --marquee-width: 0px;
   --mainColor: #F1F7EE;
-  --backgroundColor: #1A1019;
-  --secondaryBackgroundColor: #110B11;
+  --backgroundColor: #110B11;
+  --secondaryBackgroundColor: #1A1019;
   --footerBackgroundColor: #F1F7EE;
   --textColor: #F1F7EE;
   --titleTextColor: #F1F7EE;
