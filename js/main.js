@@ -18,7 +18,7 @@ $(document).ready(function() {
 function LoadChildAndLogParent(partName, parentName)
 {
     var destination = "#" + partName + "-placeholder"
-    var source = "/dev/Support/" + partName + ".html"
+    var source = "/Support/" + partName + ".html"
     
     LoadData(destination, source);
     
