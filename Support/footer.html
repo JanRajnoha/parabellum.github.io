@@ -1,0 +1,20 @@
+<script>    
+    $(document).ready(function() {        
+        var dateobj = new Date(); 
+        var dateObject = dateobj.getFullYear(); 
+        document.getElementById("year").innerHTML = dateObject;
+
+        RemovePlaceholder("footer");
+    });
+</script>
+
+<div onload="InsertCurrentYear()"
+     class="footer-section blur">
+    <div class="footer-container col-row">
+        <div class="copyright col-50">
+            © <span id="year"></span> Para Bellum Lounge s.r.o.
+        </div>
+
+        <div class="signature col-50">Web design by Mike</div>
+    </div>
+</div>
