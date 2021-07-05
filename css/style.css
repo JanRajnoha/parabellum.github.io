@@ -257,8 +257,6 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 .intro > .description
 {
     font-size: 18px;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .timeline {
