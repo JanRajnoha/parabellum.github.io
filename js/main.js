@@ -11,6 +11,7 @@ $(document).ready(function() {
     LoadChildAndLogParent("nav")
     LoadChildAndLogParent("aboutIndex")
     LoadChildAndLogParent("mainFooter")
+    LoadChildAndLogParent("aboutCatering")
     /*LoadDynamicPart("otherFooter")*/   /* LoadDynamicPart("opening")    LoadDynamicPart("map")    LoadDynamicPart("gallery")    LoadDynamicPart("contact")*/
     LoadChildAndLogParent("footer")
 });
