@@ -406,16 +406,16 @@ h2 {
   font-size: 50px;
 }
 
-h2 .fresh-font {
-  font-size: 70px;
-}
-
 .page-subtitle {
   color: var(--titleTextColor);
   /*margin-bottom: 60px;*/
   margin-top: 0px;
   font-weight: 300;
   /*line-height: 30px;*/
+}
+
+.fresh-font-size {
+  font-size: 70px;
 }
 
 h3 {
