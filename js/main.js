@@ -12,11 +12,11 @@ $(document).ready(function() {
     LoadChildAndLogParent("aboutIndex")
     LoadChildAndLogParent("mainFooter")
     LoadChildAndLogParent("aboutCatering")
-    /*LoadDynamicPart("otherFooter")*/
-    LoadDynamicPart("opening")
-    LoadDynamicPart("map")
-    LoadDynamicPart("contact")
-    /*LoadDynamicPart("gallery")   */
+    /*LoadChildAndLogParent("otherFooter")*/
+    LoadChildAndLogParent("opening")    
+    LoadChildAndLogParent("map")    
+    LoadChildAndLogParent("contact")
+    /*LoadDynamicPart("gallery")*/    
     LoadChildAndLogParent("footer")
 });
 
