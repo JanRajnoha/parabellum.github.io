@@ -505,11 +505,11 @@ img {
   height: 100%;
 }
 
-.contacts .block-title {
+.info-block .block-title {
   font-size: 40px;
 }
 
-.contacts .block-description {
+.info-block .block-description {
   font-size: 20px;
   line-height: 28px;
 }
