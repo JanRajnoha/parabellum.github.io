@@ -677,6 +677,54 @@ img {
 
 }
 
+@media screen and (max-width:950px) {
+
+    .separate .block-title {
+      max-width: 77vw;
+    }
+  
+    .separate .block-description {
+      max-width: 77vw;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    .separate .block-title {
+      max-width: 74vw;
+    }
+  
+    .separate .block-description {
+      max-width: 74vw;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+
+    .separate .block-title {
+      max-width: 71vw;
+    }
+  
+    .separate .block-description {
+      max-width: 71vw;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+  .separate .block-title {
+    max-width: 68vw;
+  }
+
+  .separate .block-description {
+    max-width: 68vw;
+  }
+
+}
+
 @media screen and (max-width:750px) {
 
   .col-row{
