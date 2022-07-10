@@ -257,6 +257,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 .intro > .description
 {
     font-size: 18px;
+    margin: 10px;
 }
 
 .timeline {
@@ -645,6 +646,7 @@ img {
   .separate {    
     display: grid;
     grid-template-columns: max-content auto;
+    justify-items: center;
   }
 
   .separate .block-title {
