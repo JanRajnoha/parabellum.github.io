@@ -713,11 +713,13 @@ img {
   }
 
   .separate .block-title {
+    max-width: 65vw;
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   .separate .block-description {
+    max-width: 65vw;
     grid-column-start: 1;
     grid-column-end: 3;  
   }
