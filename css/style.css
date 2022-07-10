@@ -648,6 +648,7 @@ img {
   }
 
   .separate .block-title {
+    max-width: 80vw;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -656,7 +657,7 @@ img {
   }
 
   .separate .block-description {
-    margin-left: 20px;
+    max-width: 80vw;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -717,7 +718,6 @@ img {
   }
 
   .separate .block-description {
-    margin-left: 0px;
     grid-column-start: 1;
     grid-column-end: 3;  
   }
