@@ -9,10 +9,6 @@ $(document).ready(function() {
     previousWidth = window.innerWidth;
 
     LoadChildAndLogParent("nav")
-    LoadChildAndLogParent("aboutIndex")
-    LoadChildAndLogParent("mainFooter")
-    LoadChildAndLogParent("aboutCatering")
-    LoadChildAndLogParent("infoCatering") 
     LoadChildAndLogParent("otherFooter")
     /*LoadChildAndLogParent("opening")    
     LoadChildAndLogParent("map")    
