@@ -147,7 +147,7 @@
         </div>
 
         <div class="info-block section">
-            <div class="block-with-review">
+            <div class="block">
                 <a href="img/Events/Majales.jpeg"
                     class="progressive replace">
 
@@ -172,7 +172,7 @@
         </div>
 
         <div class="info-block section">
-            <div class="block-with-review">
+            <div class="block">
                 <a href="img/Events/Catering-outBrno.jpeg"
                     class="progressive replace">
 
@@ -231,7 +231,16 @@
                     tabindex="0"></iframe>
         </div>
         
-        <div id="otherFooter-placeholder"></div>
+        <div onload="InsertCurrentYear()"
+             class="footer-section blur">
+            <div class="footer-container col-row">
+                <div class="copyright col-50">
+                    © <span id="year"></span> Para Bellum Lounge s.r.o.
+                </div>
+        
+                <div class="signature col-50">Web design by Mike</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
