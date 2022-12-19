@@ -191,7 +191,6 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   margin-top: 5px;
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
 }
 
 .review {
