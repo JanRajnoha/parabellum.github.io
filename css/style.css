@@ -110,6 +110,10 @@ body .section:nth-of-type(even) > .block:nth-of-type(odd) {
   text-align: right;
 }
 
+.block-with-review {
+    grid-template-rows: 3fr 1fr;
+}
+
 /*.section:nth-of-type(even) > .block:nth-of-type(even), 
 .section:nth-of-type(odd) > .block:nth-of-type(odd) {
   direction: rtl;  
@@ -161,6 +165,14 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   direction: ltr;
 }
 
+.block-review {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*.section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
 .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   direction: ltr;
@@ -178,10 +190,19 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   margin-top: 5px;
   font-size: 36px;
   font-weight: bold;
+  text-align: center;
 }
 
 .block-description {
 
+}
+
+.review {
+    font-style: italic;
+}
+
+.customer {
+    margin-top: 16px;
 }
 
 .fresh-font {
