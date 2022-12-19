@@ -18,12 +18,10 @@ $(document).ready(function() {
 });
 
 function InsertCurrentYear()
-{    
-    $(document).ready(function() {        
+{           
         var dateobj = new Date(); 
         var dateObject = new Date().getFullYear(); 
         document.getElementById("year").innerHTML = dateObject;
-    });
 }
 
 function LoadChildAndLogParent(partName, parentName)
