@@ -135,7 +135,28 @@
 </head>
 
 <body>
-    <div id="nav-placeholder"></div>
+    <div class="navigation blur"
+         onresize="CheckWindowSize()">
+        
+        <a href="index.html#" 
+           class="nav-link logo-menu">Para Bellum Lounge</a>
+
+        <a href="javascript:void(0)" 
+           class="nav-link menu-mobile"
+           onclick="SwitchMenu()">Menu <i class="fas fa-bars"></i></a>
+
+        <div class="menu" id="menu">
+            <nav>
+                <a href="index#" onclick="SwitchMenu()" class="nav-link">Úvod</a>
+                <!--<a href="about.html#" class="nav-link">O nás</a>-->
+                <!--<a href="offer.html#" class="nav-link">Nabídka</a>-->
+                <a href="index#oteviracka" onclick="SwitchMenu()" class="nav-link">Otevírací doba</a>
+                <a href="index#kontakt" onclick="SwitchMenu()" class="nav-link">Kontakt</a>
+                <a href="index#mapa" onclick="SwitchMenu()" class="nav-link">Mapa</a>
+                <a href="catering" onclick="SwitchMenu()" class="nav-link">Catering</a>
+            </nav>
+        </div>
+    </div>
 
     <div class="body-background">   
         <div class="intro">

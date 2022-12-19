@@ -165,9 +165,6 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   direction: ltr;
 }
 
-.block-outside-image{
-}
-
 .block-review {
     grid-column-start: 1;
     grid-row-start: 2;
@@ -647,7 +644,7 @@ img {
   }
 
   .block-with-review {
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
   }
 
   .block-review {
