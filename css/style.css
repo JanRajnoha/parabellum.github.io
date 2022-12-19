@@ -517,6 +517,10 @@ img {
     margin-bottom: 40px;
 }
 
+.logo-img {
+    width: 100%;
+}
+
 .map {
   height: 500px;
   padding: 0px;
