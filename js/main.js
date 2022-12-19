@@ -7,66 +7,9 @@ let parentsDynamic = new Map();
 $(document).ready(function() {
 
     previousWidth = window.innerWidth;
-
-    LoadChildAndLogParent("nav")
-    LoadChildAndLogParent("otherFooter")
-    /*LoadChildAndLogParent("opening")    
-    LoadChildAndLogParent("map")    
-    LoadChildAndLogParent("contact")
-    LoadDynamicPart("gallery")*/    
-    LoadChildAndLogParent("footer")
+    
+    document.getElementById("year").innerHTML = new Date().getFullYear(); 
 });
-
-function InsertCurrentYear()
-{           
-        var dateobj = new Date(); 
-        var dateObject = new Date().getFullYear(); 
-        document.getElementById("year").innerHTML = dateObject;
-}
-
-function LoadChildAndLogParent(partName, parentName)
-{
-    var destination = "#" + partName + "-placeholder"
-    var source = "/Support/" + partName + ".html"
-    
-    LoadData(destination, source);
-    
-    if (parentName !== undefined) parentsDynamic.set(partName, parentName);
-}
-
-function LoadData(destination, source)
-{
-    try {
-        $(destination).load(source, 
-                            function(response, status, http){ 
-                                if(status == "error") 
-                                    console.error("Error: " + http.status + ": " + http.statusText); 
-                            });
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-function RemovePlaceholder(partName, doWorkAfterRemove)
-{
-    var destination = partName + "-placeholder"
-
-    var inner = document.getElementById(destination).innerHTML;
-    document.getElementById(destination).outerHTML = inner; 
-
-    RemoveParentPlaceholder(partName, doWorkAfterRemove)
-}
-
-function RemoveParentPlaceholder(childName, doWorkAfterRemove)
-{    
-    parentName = parentsDynamic.get(childName);
-    parentsDynamic.delete(childName);
-    
-    if (parentName !== undefined && [ ...parentsDynamic.values() ].filter(x => x == parentName).length == 0)
-        RemovePlaceholder(parentName);
-    
-    if (doWorkAfterRemove !== undefined) doWorkAfterRemove();
-}
 
 function CheckWindowSize()
 {
