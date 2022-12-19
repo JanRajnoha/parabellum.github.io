@@ -126,21 +126,23 @@
          onresize="CheckWindowSize()">
         
         <a href="index.html#" 
-           class="nav-link logo-menu">Para Bellum Lounge</a>
+           class="nav-link logo-menu"
+           title="Úvod">Para Bellum Lounge</a>
 
         <a href="javascript:void(0)" 
            class="nav-link menu-mobile"
-           onclick="SwitchMenu()">Menu <img class="menu-mobile-icon" src="img/Web/menu.svg" alt="Menu icon"/></a>
+           onclick="SwitchMenu()"
+           title="Menu">Menu <img class="menu-mobile-icon" src="img/Web/menu.svg" alt="Menu icon"/></a>
 
         <div class="menu" id="menu">
             <nav>
-                <a href="/#" onclick="SwitchMenu()" class="nav-link">Úvod</a>
+                <a title="Úvod" href="/#" onclick="SwitchMenu()" class="nav-link">Úvod</a>
                 <!--<a href="about.html#" class="nav-link">O nás</a>-->
                 <!--<a href="offer.html#" class="nav-link">Nabídka</a>-->
-                <a href="/#oteviracka" onclick="SwitchMenu()" class="nav-link">Otevírací doba</a>
-                <a href="/#kontakt" onclick="SwitchMenu()" class="nav-link">Kontakt</a>
-                <a href="/#mapa" onclick="SwitchMenu()" class="nav-link">Mapa</a>
-                <a href="catering" onclick="SwitchMenu()" class="nav-link">Catering</a>
+                <a title="Otevírací doba" href="/#oteviracka" onclick="SwitchMenu()" class="nav-link">Otevírací doba</a>
+                <a title="Kontakt" href="/#kontakt" onclick="SwitchMenu()" class="nav-link">Kontakt</a>
+                <a title="Mapa" href="/#mapa" onclick="SwitchMenu()" class="nav-link">Mapa</a>
+                <a title="Catering" href="catering" onclick="SwitchMenu()" class="nav-link">Catering</a>
             </nav>
         </div>
     </div>
@@ -162,8 +164,9 @@
         <div class="opening section">
 
             <div class="block">
-                <a href="img/Hkhs/Hkh-19.png"
-                    class="progressive replace">
+                <a title="Promo dýmka"
+                   href="img/Hkhs/Hkh-19.png"
+                   class="progressive replace">
 
                     <img src="img/Hkhs/Hkh-19-tiny.png" 
                             class="block-image preview"
@@ -198,8 +201,9 @@
         <div class="info-block section">
 
             <div class="block">
-                <a href="img/Drinks/Drink-9.jpg"
-                    class="progressive replace">
+                <a title="Promo drink"
+                   href="img/Drinks/Drink-9.jpg"
+                   class="progressive replace">
 
                     <img src="img/Drinks/Drink-9-tiny.jpg" 
                             class="block-image preview"
@@ -211,14 +215,15 @@
                     <div class="block-description">
                         <span class="bold">Para Bellum Lounge s.r.o.</span><br>
                         Štefánikova 93/22, Brno 602 00<br><br>
-                        <a href="tel:+420733382121">+420 733 382 121</a><br>
-                        <a href="tel:+420721107980">+420 721 107 980</a><br>
-                        <a href="mailto:info@parabellumlounge.cz">info@parabellumlounge.cz</a>
+                        <a title="Kontakt na firmu" href="tel:+420733382121">+420 733 382 121</a><br>
+                        <a title="Kontakt na firmu" href="tel:+420721107980">+420 721 107 980</a><br>
+                        <a title="Kontaktní email" href="mailto:info@parabellumlounge.cz">info@parabellumlounge.cz</a>
                     
                         <div class="social-icons">
                             <a class="img-link"
-                            href="https://www.facebook.com/Parabellum.Lounge"
-                            target="_blank">
+                               title="Para Bellum Lounge Facebook"
+                               href="https://www.facebook.com/Parabellum.Lounge"
+                               target="_blank">
 
                                 <img class="icon-contact fb-icon"
                                     loading="lazy"
@@ -227,7 +232,8 @@
                             </a>
 
                             <a class="img-link"
-                            href="https://www.instagram.com/para_bellum_lounge/"
+                               title="Para Bellum Lounge Instagram"
+                               href="https://www.instagram.com/para_bellum_lounge/"
                             target="_blank">
 
                                 <img class="icon-contact insta-icon"
@@ -264,4 +270,3 @@
     </div>
 </body>
 </html>
-
