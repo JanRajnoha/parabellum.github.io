@@ -17,6 +17,15 @@ $(document).ready(function() {
     LoadChildAndLogParent("footer")
 });
 
+function InsertCurrentYear()
+{    
+    $(document).ready(function() {        
+        var dateobj = new Date(); 
+        var dateObject = new Date().getFullYear(); 
+        document.getElementById("year").innerHTML = dateObject;
+    });
+}
+
 function LoadChildAndLogParent(partName, parentName)
 {
     var destination = "#" + partName + "-placeholder"
