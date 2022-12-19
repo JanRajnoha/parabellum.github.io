@@ -171,6 +171,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
     grid-column-end: 3;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 /*.section:nth-of-type(even) > .block:nth-of-type(even) > .block-text, 
@@ -191,10 +192,6 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-}
-
-.block-description {
-
 }
 
 .review {
@@ -534,6 +531,12 @@ img {
 .info-block .block-description {
   font-size: 20px;
   line-height: 28px;
+}
+
+.info-block .block-review{
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .footer-section {
