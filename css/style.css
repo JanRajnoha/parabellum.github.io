@@ -240,6 +240,10 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   text-align: end;
 }
 
+.menu-mobile-icon {
+  height: 11px;
+}
+
 .logo-menu {
   margin: 0px;
   position: relative;
