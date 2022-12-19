@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     previousWidth = window.innerWidth;
     
-    document.getElementById("year").innerHTML = new Date().getFullYear(); 
+    document.getElementById("year").innerHTML = (new Date()).getFullYear(); 
 });
 
 function CheckWindowSize()
