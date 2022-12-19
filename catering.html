@@ -125,22 +125,24 @@
     <div class="navigation blur"
          onresize="CheckWindowSize()">
         
-        <a href="index.html#" 
-           class="nav-link logo-menu">Para Bellum Lounge</a>
+         <a href="index.html#" 
+            class="nav-link logo-menu"
+            title="Úvod">Para Bellum Lounge</a>
 
         <a href="javascript:void(0)" 
            class="nav-link menu-mobile"
-           onclick="SwitchMenu()">Menu <img class="menu-mobile-icon" src="img/Web/menu.svg" alt="Menu icon"/></a>
+           onclick="SwitchMenu()"
+           title="Menu">Menu <img class="menu-mobile-icon" src="img/Web/menu.svg" alt="Menu icon"/></a>
 
         <div class="menu" id="menu">
             <nav>
-                <a href="/" onclick="SwitchMenu()" class="nav-link">Úvod</a>
+                <a title="Úvod" href="/#" onclick="SwitchMenu()" class="nav-link">Úvod</a>
                 <!--<a href="about.html#" class="nav-link">O nás</a>-->
                 <!--<a href="offer.html#" class="nav-link">Nabídka</a>-->
-                <a href="/#oteviracka" onclick="SwitchMenu()" class="nav-link">Otevírací doba</a>
-                <a href="/#kontakt" onclick="SwitchMenu()" class="nav-link">Kontakt</a>
-                <a href="/#mapa" onclick="SwitchMenu()" class="nav-link">Mapa</a>
-                <a href="catering" onclick="SwitchMenu()" class="nav-link">Catering</a>
+                <a title="Otevírací doba" href="/#oteviracka" onclick="SwitchMenu()" class="nav-link">Otevírací doba</a>
+                <a title="Kontakt" href="/#kontakt" onclick="SwitchMenu()" class="nav-link">Kontakt</a>
+                <a title="Mapa" href="/#mapa" onclick="SwitchMenu()" class="nav-link">Mapa</a>
+                <a title="Catering" href="catering" onclick="SwitchMenu()" class="nav-link">Catering</a>
             </nav>
         </div>
     </div>
@@ -156,8 +158,9 @@
 
         <div class="info-block section">
             <div class="block block-with-review">
-                <a href="img/Events/Majales.jpeg"
-                    class="progressive replace block-outside-image">
+                <a title="Catering - Majáles Brno"
+                   href="img/Events/Majales.jpeg"
+                   class="progressive replace block-outside-image">
 
                     <img src="img/Events/Majales-tiny.jpeg" 
                          class="block-image preview"
@@ -181,8 +184,9 @@
 
         <div class="info-block section">
             <div class="block block-with-review">
-                <a href="img/Events/Catering-outBrno.jpeg"
-                    class="progressive replace block-outside-image">
+                <a title="Catering - Blábloviny"
+                   href="img/Events/Catering-outBrno.jpeg"
+                   class="progressive replace block-outside-image">
 
                     <img src="img/Events/Catering-outBrno-tiny.jpg" 
                             class="block-image preview"
@@ -210,7 +214,8 @@
         <div class="info-block section">
 
             <div class="block">
-                <a href="img/Events/Catering-chvostec.jpeg"
+                <a title="Catering - Brno hotel"
+                   href="img/Events/Catering-chvostec.jpeg"
                     class="progressive replace block-outside-image">
 
                     <img src="img/Events/Catering-chvostec-tiny.jpeg"
@@ -222,13 +227,12 @@
                     <div class="block-title">Máte zájem?</div>
                     <div class="block-description">
                         <span class="bold">Každá akce je individuální, stejně jako požadavky a představy.</span><br><br>
-                        Pro domluvení možností, volejte <a href="tel:+420733382121">+420 733 382 121</a>.<br>
+                        Pro domluvení možností, volejte <a title="Kontakt na firmu" href="tel:+420733382121">+420 733 382 121</a>.<br>
                     </div>
                 </div>
             </div>
         </div>
         
-        <a id="mapa"></a>
         <div class="map section">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.5206312175783!2d16.601251316480756!3d49.2096526793233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471295a081fe99f7%3A0x13501899d8532d22!2sPara%20Bellum%20Lounge!5e0!3m2!1scs!2scz!4v1621107486135!5m2!1scs!2scz" 
                     style="border:0;" 
@@ -251,4 +255,3 @@
     </div>
 </body>
 </html>
-
