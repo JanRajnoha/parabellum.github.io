@@ -111,7 +111,7 @@ body .section:nth-of-type(even) > .block:nth-of-type(odd) {
 }
 
 .block-with-review {
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 /*.section:nth-of-type(even) > .block:nth-of-type(even), 
