@@ -28,6 +28,7 @@ html {
   --linkColor: #EE444A;
   --linkHoverColor: #EB232A;
   --linkVisitedColor: #F37C80;
+  --menuBlurBackground: #ffffffab;
   /*--marquee-animation-duration: calc(var(--marquee-elements) * 10s);*/
 }
 
@@ -210,7 +211,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 }
 
 .navigation{
-  background: var(--mainColor);
+  background: var(--menuBlurBackground);
   color: var(--menuTextColor);
   display: grid;
   padding: 30px;
@@ -239,6 +240,10 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   text-align: end;
 }
 
+.menu-mobile-icon {
+  height: 11px;
+}
+
 .logo-menu {
   margin: 0px;
   position: relative;
@@ -259,6 +264,7 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
   color: var(--menuTextColor);
 }
 
