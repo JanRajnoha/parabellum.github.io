@@ -144,7 +144,7 @@ body .section:nth-of-type(even) > .block:nth-of-type(odd) {
   width: 50%;
 }
 
-.block a {
+.block a, .link {
   color: var(--linkColor);
 }
 
