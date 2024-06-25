@@ -378,7 +378,8 @@ body .section:nth-of-type(odd) > .block:nth-of-type(odd) > .block-text {
 }
 
 .blur {  
-  backdrop-filter: saturate(180%) blur(20px)
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 .delimiter-10-right {
