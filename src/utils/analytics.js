@@ -21,9 +21,10 @@ function initGA() {
 }
 
 function initClarity() {
-  injectScript(`https://www.clarity.ms/tag/${CLARITY_ID}`, () => {
-    window.clarity?.('consent')
-  })
+  window.clarity = window.clarity || function () {
+    (window.clarity.q = window.clarity.q || []).push(arguments)
+  }
+  injectScript(`https://www.clarity.ms/tag/${CLARITY_ID}`)
 }
 
 export function initAnalytics() {
