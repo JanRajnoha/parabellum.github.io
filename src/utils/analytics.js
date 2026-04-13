@@ -22,10 +22,7 @@ function initGA() {
 
 function initClarity() {
   injectScript(`https://www.clarity.ms/tag/${CLARITY_ID}`, () => {
-    // Signal consent to Clarity after the script loads
-    if (typeof window.clarity === 'function') {
-      window.clarity('consent')
-    }
+    window.clarity?.('consent')
   })
 }
 
