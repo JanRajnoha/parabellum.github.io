@@ -43,9 +43,9 @@ export default function References() {
     <main className="references-page">
       <Helmet>
         <title>Reference — Para Bellum Lounge Brno</title>
-        <meta name="description" content="Přečtěte si, co říkají naši klienti Para Bellum Lounge. Hodnocení a reference zákazníků hookah baru v centru Brna." />
+        <meta name="description" content="Přečtěte si, co říkají naši klienti Para Bellum Lounge. Hodnocení a reference zákazníků shisha baru v centru Brna." />
         <meta property="og:title" content="Reference — Para Bellum Lounge Brno" />
-        <meta property="og:description" content="Co říkají naši klienti Para Bellum Lounge — prémiového hookah baru v centru Brna." />
+        <meta property="og:description" content="Co říkají naši klienti Para Bellum Lounge — prémiového shisha baru v centru Brna." />
         <meta property="og:url" content="https://parabellumlounge.cz/references" />
         <link rel="canonical" href="https://parabellumlounge.cz/references" />
         <script type="application/ld+json">{JSON.stringify(reviewsSchema)}</script>

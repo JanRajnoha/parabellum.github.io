@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <main>
       <Helmet>
-        <title>Para Bellum Lounge — Hookah Bar Brno | Vodní dýmky &amp; Koktejly</title>
-        <meta name="description" content="Para Bellum Lounge — prémiový hookah bar v centru Brna. Vodní dýmky, koktejly, soukromé akce a catering. Sukova 49/4, Brno. Rezervace online." />
-        <meta property="og:title" content="Para Bellum Lounge — Hookah Bar Brno" />
-        <meta property="og:description" content="Prémiový hookah bar v centru Brna. Vodní dýmky, koktejly, soukromé akce a catering po celé ČR." />
+        <title>Para Bellum Lounge — Shisha Bar Brno | Vodní dýmky &amp; Koktejly</title>
+        <meta name="description" content="Para Bellum Lounge — prémiový shisha bar v centru Brna. Vodní dýmky, koktejly, soukromé akce a catering. Sukova 49/4, Brno. Rezervace online." />
+        <meta property="og:title" content="Para Bellum Lounge — Shisha Bar Brno" />
+        <meta property="og:description" content="Prémiový shisha bar v centru Brna. Vodní dýmky, koktejly, soukromé akce a catering po celé ČR." />
         <meta property="og:url" content="https://parabellumlounge.cz/" />
         <link rel="canonical" href="https://parabellumlounge.cz/" />
       </Helmet>

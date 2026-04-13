@@ -4,31 +4,79 @@
 
   <url>
     <loc>https://parabellumlounge.cz/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://parabellumlounge.cz/img/Web/logo-big-compressed.png</image:loc>
-      <image:title>Para Bellum Lounge — hookah bar Brno</image:title>
+      <image:title>Para Bellum Lounge — shisha bar Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Para/Para-2.jpg</image:loc>
+      <image:title>Para Bellum Lounge — interiér shisha baru Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Para/Para-1.jpg</image:loc>
+      <image:title>Soukromá akce v Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Drinks/Coffee.jpg</image:loc>
+      <image:title>Káva v Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Drinks/Drink-1.jpg</image:loc>
+      <image:title>Koktejl v shisha baru Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-1.jpg</image:loc>
+      <image:title>Catering Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-4.jpg</image:loc>
+      <image:title>Catering Para Bellum Lounge na akci</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Hkhs/Hkh-1.jpg</image:loc>
+      <image:title>Vodní dýmka Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-chvostec.jpeg</image:loc>
+      <image:title>Catering akce Para Bellum Lounge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Majales.jpeg</image:loc>
+      <image:title>Para Bellum Lounge — Majáles Brno</image:title>
     </image:image>
   </url>
 
   <url>
     <loc>https://parabellumlounge.cz/catering</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-12.jpg</image:loc>
+      <image:title>Catering vodní dýmky Para Bellum Lounge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-3.jpg</image:loc>
+      <image:title>Catering akce Para Bellum Lounge Brno</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://parabellumlounge.cz/img/Events/Catering-chvostec.jpeg</image:loc>
-      <image:title>Catering akce Para Bellum</image:title>
+      <image:title>Catering Para Bellum Lounge na Majáles Brno</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://parabellumlounge.cz/img/Events/Majales.jpeg</image:loc>
-      <image:title>Para Bellum catering — Majáles</image:title>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-6.jpg</image:loc>
+      <image:title>Catering Para Bellum Lounge mimo Brno</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://parabellumlounge.cz/img/Events/Catering-outBrno.jpeg</image:loc>
-      <image:title>Para Bellum catering mimo Brno</image:title>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-13.jpg</image:loc>
+      <image:title>Koktejl catering Para Bellum Lounge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-2.jpg</image:loc>
+      <image:title>Vodní dýmka catering Para Bellum Lounge</image:title>
     </image:image>
   </url>
 
@@ -37,6 +85,10 @@
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Hkhs/Hkh-1.jpg</image:loc>
+      <image:title>Para Bellum Lounge — reference klientů</image:title>
+    </image:image>
   </url>
 
 </urlset>

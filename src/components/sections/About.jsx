@@ -22,7 +22,7 @@ export default function About() {
             <img src="/img/Drinks/Coffee.jpg" alt="Vodní dýmka v Para Bellum Lounge Brno" loading="lazy" width="1200" height="1800" />
           </div>
           <div className="about-img-item">
-            <img src="/img/Drinks/Drink-1.jpg" alt="Koktejl v hookah baru Para Bellum Lounge Brno" loading="lazy" width="1200" height="1800" />
+            <img src="/img/Drinks/Drink-1.jpg" alt="Koktejl v shisha baru Para Bellum Lounge Brno" loading="lazy" width="1200" height="1800" />
           </div>
           <div className="about-img-item about-img-wide">
             <img src="/img/Para/Para-1.jpg" alt="Soukromá akce v Para Bellum Lounge Brno" loading="lazy" width="1200" height="800" />

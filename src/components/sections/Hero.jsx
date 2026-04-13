@@ -11,13 +11,13 @@ export default function Hero() {
         <h1 className="hero-logo-wrap">
           <img
             src="/img/Web/logo-big-compressed.png"
-            alt="Para Bellum Lounge — hookah bar Brno"
+            alt="Para Bellum Lounge — shisha bar Brno"
             className="hero-logo"
             width="640"
             height="200"
             fetchpriority="high"
           />
-          <span className="visually-hidden">Para Bellum Lounge — hookah bar Brno</span>
+          <span className="visually-hidden">Para Bellum Lounge — shisha bar Brno</span>
         </h1>
         <Button href={contact.reservationUrl} variant="primary" className="hero-cta">
           Rezervovat místo
