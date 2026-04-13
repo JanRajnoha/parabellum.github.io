@@ -15,12 +15,6 @@
   background-size: cover;
   background-position: center 30%;
   filter: brightness(0.32) saturate(0.55);
-  transform: scale(1.04);
-  transition: transform 10s ease-out;
-}
-
-.hero:hover .hero-bg {
-  transform: scale(1.0);
 }
 
 .hero-overlay {
