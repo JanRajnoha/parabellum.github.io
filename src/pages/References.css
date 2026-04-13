@@ -138,3 +138,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .ref-hero-content {
+    padding-top: calc(5.5rem + 64px);
+    padding-bottom: 5.5rem;
+  }
+}

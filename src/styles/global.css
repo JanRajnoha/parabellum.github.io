@@ -119,6 +119,16 @@ p {
   padding: var(--space-lg) 0;
 }
 
+@media (max-width: 640px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-sm {
+    padding: 1.75rem 0;
+  }
+}
+
 /* ─── Divider ─────────────────────────────────────────────────────────────── */
 .divider {
   width: 60px;
