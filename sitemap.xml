@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://parabellumlounge.cz/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Web/logo-big-compressed.png</image:loc>
+      <image:title>Para Bellum Lounge — hookah bar Brno</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://parabellumlounge.cz/catering</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-chvostec.jpeg</image:loc>
+      <image:title>Catering akce Para Bellum</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Majales.jpeg</image:loc>
+      <image:title>Para Bellum catering — Majáles</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://parabellumlounge.cz/img/Events/Catering-outBrno.jpeg</image:loc>
+      <image:title>Para Bellum catering mimo Brno</image:title>
+    </image:image>
+  </url>
+
+</urlset>
