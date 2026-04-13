@@ -83,12 +83,6 @@ export default function OpeningHours() {
                   </a>
                 </div>
                 <div className="oh-direct-row">
-                  <span className="oh-direct-name">Obecné dotazy</span>
-                  <a href={`tel:${contact.phoneContact.replace(/\s/g, '')}`} className="oh-direct-phone">
-                    {contact.phoneContact}
-                  </a>
-                </div>
-                <div className="oh-direct-row">
                   <span className="oh-direct-name">E-mail</span>
                   <a href={`mailto:${contact.email}`} className="oh-direct-phone">
                     {contact.email}

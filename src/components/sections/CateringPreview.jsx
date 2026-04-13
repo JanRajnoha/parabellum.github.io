@@ -12,17 +12,18 @@ export default function CateringPreview() {
               <img src="/img/Events/Catering-1.jpg" alt="Catering Para Bellum Lounge Brno" loading="lazy" width="960" height="1280" />
             </div>
             <div className="cp-image-side">
-              <img src="/img/Events/Catering-4.jpg" alt="Catering Para Bellum Lounge na akci" loading="lazy" width="1280" height="960" />
+              <img src="/img/Events/Catering-4.jpg" alt="Catering Para Bellum Lounge na akci" loading="lazy" width="1200" height="1600" />
             </div>
           </div>
 
           <div className="cp-text-col">
             <SectionTitle label="Catering & akce" title="Přineseme zážitek k vám" />
             <p className="cp-lead">
-              Vodní dýmky, obsluha a atmosféra Para Bellum — přímo na vaši soukromou akci,
-              firemní večírek nebo festival.
+              Vodní dýmky, dinky, obsluha a atmosféra Para Bellum — přímo na vaši svatbě, soukromé akci,
+              firemním večírku nebo festivalu.
             </p>
             <ul className="cp-features accent-list">
+              <li>Svatby</li>
               <li>Narozeninové oslavy &amp; soukromé party</li>
               <li>Firemní akce a teambuildingové večery</li>
               <li>Festivaly a venkovní akce</li>

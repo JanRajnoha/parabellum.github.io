@@ -52,7 +52,7 @@
 }
 
 .hero-logo {
-  width: min(480px, 78vw);
+  width: min(640px, 88vw);
   height: auto;
   filter: drop-shadow(0 0 50px rgba(196, 154, 82, 0.35));
 }
@@ -108,6 +108,6 @@
 
 @media (max-width: 480px) {
   .hero-logo {
-    width: 72vw;
+    width: 88vw;
   }
 }

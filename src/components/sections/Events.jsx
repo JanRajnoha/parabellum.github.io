@@ -10,18 +10,14 @@ export default function Events() {
       <div className="container">
         <div className="events-inner">
           <div className="events-text">
-            <SectionTitle label="Soukromé rezervace" title="Celý prostor jen pro vás" />
+            <SectionTitle label="Soukromé akce" title="Celý prostor jen pro vás" />
             <p>
-              Plánujete narozeninovou oslavu, firemní akci nebo jen večer s přáteli?
-              Para Bellum nabízí pronájem prostoru a catering s vodními dýmkami přímo k vám.
+              Uvolněná lounge atmosféra je ideální jak pro start párty, tak pro celovečerní akci bez tlačenic a stresu. Zároveň si u nás můžeš pronajmout spodní prostor – ať už na oslavu narozenin, firemní briefing nebo soukromou párty.
             </p>
-            <ul className="events-perks accent-list">
-              <li>Pronájem celého prostoru</li>
-              <li>Catering s vodními dýmkami</li>
-              <li>Individuální přístup a nabídka</li>
-              <li>Dostupné i mimo Brno</li>
-            </ul>
-            <Button href={`mailto:${contact.email}`} variant="secondary">
+            <p>
+              K dispozici máš televizor, karaoke i kompletní zázemí, takže všechno proběhne přesně podle tvých představ. Prostě místo, kde se potkává dobrá nálada, hudba a lidi, se kterými chceš být.
+            </p>
+<Button href={`mailto:${contact.email}`} variant="secondary">
               Nezávazná poptávka
             </Button>
           </div>

@@ -23,9 +23,8 @@ export default function Catering() {
       <div className="cat-hero">
         <div className="cat-hero-overlay" />
         <div className="cat-hero-content container">
-          <span className="label-accent">Para Bellum</span>
           <h1>Catering & Akce</h1>
-          <p>Prémiový zážitek s vodními dýmkami — kdekoli.</p>
+          <p>Prémiový zážitek s vodními dýmkami a drinky — kdekoli.</p>
         </div>
       </div>
 
@@ -34,16 +33,19 @@ export default function Catering() {
         <div className="container cat-intro-inner">
           <div>
             <SectionTitle label="Co nabízíme" title="Zážitek Para Bellum u vás" />
+            <h3 className="cat-intro-subtitle">Vodní dýmky na míru</h3>
             <p className="cat-intro-text">
-              Neumíme být na každém místě najednou — ale dokážeme přinést Para Bellum k vám.
-              Profesionální obsluha, prémiové dýmky a atmosféra, na kterou vaši hosté nezapomenou.
-              Celorepublikové působení, individuální přístup.
+              Postaráme se o prémiový plicní wellness s širokým výběrem kvalitních tabáků a profesionální obsluhou. Dopřej svým hostům relax i stylový zážitek, na který nezapomenou.
+            </p>
+            <h3 className="cat-intro-subtitle">Barový catering</h3>
+            <p className="cat-intro-text">
+              Namícháme atmosféru i drinky přesně podle tvé akce. Od klasiky po signature koktejly.
             </p>
           </div>
           <div className="cat-intro-numbers">
             <div className="cat-stat">
               <span className="cat-stat-num">50+</span>
-              <span className="cat-stat-label">Akcí ročně</span>
+              <span className="cat-stat-label">Akcí</span>
             </div>
             <div className="cat-stat">
               <span className="cat-stat-num">CZ</span>
@@ -89,13 +91,16 @@ export default function Catering() {
       {/* Testimonials */}
       <section className="cat-testimonials section">
         <div className="container">
-          <SectionTitle label="Reference" title="Co říkají hosté" center />
+          <SectionTitle label="Reference" title="Co říkají klienti" center />
           <div className="cat-testimonials-grid">
-            {references.map(({ id, name, text }) => (
+            {references.map(({ id, name, year, text, placeholder }) => (
               <div key={id} className="cat-testimonial-card">
                 <span className="cat-testimonial-quote-mark">"</span>
                 <blockquote className="cat-testimonial-text">{text}</blockquote>
-                <footer className="cat-testimonial-author">— {name}</footer>
+                <footer className="cat-testimonial-author">
+                  <span className="cat-testimonial-name">— {name}</span>
+                  {year && <span className="cat-testimonial-year">{year}</span>}
+                </footer>
               </div>
             ))}
           </div>

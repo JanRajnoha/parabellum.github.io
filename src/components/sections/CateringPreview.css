@@ -41,13 +41,17 @@
 
 /* Text column */
 .cp-lead {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.85;
   margin-bottom: var(--space-md);
 }
 
 .cp-features {
   margin-bottom: var(--space-md);
+}
+
+.cp-features.accent-list li {
+  font-size: 1.1rem;
 }
 
 .cp-link {

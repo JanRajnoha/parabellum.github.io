@@ -61,8 +61,16 @@
   align-items: center;
 }
 
+.cat-intro-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: var(--space-md);
+  margin-bottom: 0.4rem;
+}
+
 .cat-intro-text {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.9;
 }
 
@@ -80,14 +88,14 @@
 }
 
 .cat-stat-num {
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--color-accent);
   line-height: 1;
 }
 
 .cat-stat-label {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-text-dim);
@@ -137,13 +145,13 @@
 
 .cat-service-card h3 {
   color: var(--color-text);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   margin-bottom: 0.6rem;
   letter-spacing: 0.05em;
 }
 
 .cat-service-card p {
-  font-size: 0.94rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   max-width: none;
 }
@@ -197,7 +205,7 @@
 
 .cat-testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
@@ -229,7 +237,7 @@
 }
 
 .cat-testimonial-text {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: var(--color-text-muted);
   font-style: italic;
@@ -238,11 +246,28 @@
 }
 
 .cat-testimonial-author {
-  font-size: 0.72rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-text-dim);
+}
+
+.cat-testimonial-year {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.cat-testimonial-placeholder {
+  border-style: dashed;
+  opacity: 0.5;
 }
 
 /* ─── CTA ────────────────────────────────────────────────────────────────────── */
@@ -266,6 +291,7 @@
 
 .cat-cta-inner p {
   color: var(--color-text-muted);
+  font-size: 1.2rem;
   max-width: 48ch;
 }
 
@@ -285,9 +311,6 @@
     grid-template-columns: 1fr;
   }
 
-  .cat-testimonials-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .cat-cta-inner {
     flex-direction: column;

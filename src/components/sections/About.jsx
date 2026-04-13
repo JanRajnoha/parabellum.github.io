@@ -8,23 +8,24 @@ export default function About() {
         <div className="about-text">
           <SectionTitle label="O nás" title="Útočiště klidu uprostřed města" />
           <p>
-            Para Bellum je místo, kde se čas zpomalí. Přijďte si vychutnat prémiové vodní dýmky
-            v příjemném, útulném prostředí — ať už s přáteli, nebo jen tak pro sebe.
+            Hledáš místo, kam můžeš vyrazit s přáteli večer, ale zároveň i přes den v klidu pracovat nebo studovat? Para Bellum Lounge je ideální volba pro obojí.
           </p>
           <p className="about-text-2">
-            Naším cílem je vytvořit prostor, kde se každý cítí vítaný. Žádný shon, žádný stres —
-            jen klid, dobrá atmosféra a kvalitní zážitek.
+            Přes den u nás najdeš příjemné prostředí pro home office i studium – vysoké stoly vhodné pro práci s notebookem, zásuvky téměř na každém místě a rychlou, stabilní Wi-Fi. To vše v klidné lounge atmosféře, kde si můžeš dát kávu nebo drink a nerušeně se soustředit. Práce i studium tady mají svůj klid a rytmus.
+          </p>
+          <p className="about-text-2">
+            Večer se pak prostor promění v ideální místo na pohodový drink, pivko nebo dýmku s přáteli. Můžeš si u nás posedět, zahrát deskovky, dát si pár drinků na rozjezd před klubem, nebo u nás rovnou zůstat celý večer.
           </p>
         </div>
         <div className="about-images">
           <div className="about-img-item">
-            <img src="/img/Drinks/Coffee.jpg" alt="Vodní dýmka v Para Bellum Lounge Brno" loading="lazy" width="3640" height="2048" />
+            <img src="/img/Drinks/Coffee.jpg" alt="Vodní dýmka v Para Bellum Lounge Brno" loading="lazy" width="1200" height="1800" />
           </div>
           <div className="about-img-item">
-            <img src="/img/Drinks/Drink-1.jpg" alt="Koktejl v hookah baru Para Bellum Lounge Brno" loading="lazy" width="2048" height="1365" />
+            <img src="/img/Drinks/Drink-1.jpg" alt="Koktejl v hookah baru Para Bellum Lounge Brno" loading="lazy" width="1200" height="1800" />
           </div>
           <div className="about-img-item about-img-wide">
-            <img src="/img/Para/Para-1.jpg" alt="Soukromá akce v Para Bellum Lounge Brno" loading="lazy" width="960" height="1280" />
+            <img src="/img/Para/Para-1.jpg" alt="Soukromá akce v Para Bellum Lounge Brno" loading="lazy" width="1200" height="800" />
           </div>
         </div>
       </div>

@@ -7,13 +7,13 @@
 
 .about-text p {
   margin-bottom: var(--space-sm);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
 .about-text-2 {
   color: var(--color-text-dim) !important;
-  font-size: 0.97rem !important;
+  font-size: 1.1rem !important;
 }
 
 .about-images {

@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* ── Status badge — visible in top bar on MOBILE only ── */}
         <span className={`navbar-status-bar ${statusClass}`} aria-live="polite">
           <span className="navbar-status-dot" />
-          {isOpen ? 'Otevřeno' : 'Zavřeno'}
+          <span>{isOpen ? 'Otevřeno' : 'Zavřeno'}</span>
         </span>
 
         {/* ── Desktop nav / Mobile centered card ── */}
@@ -95,7 +95,7 @@ export default function Navbar() {
           {/* Status — desktop inline nav only */}
           <span className={`navbar-status navbar-status-desktop ${statusClass}`}>
             <span className="navbar-status-dot" />
-            {isOpen ? 'Otevřeno' : 'Zavřeno'}
+            <span>{isOpen ? 'Otevřeno' : 'Zavřeno'}</span>
           </span>
 
           {/* CTA */}
