@@ -45,6 +45,11 @@ export default function Footer() {
               <span className="ft-legal-sep" />
               <a href={`mailto:${contact.email}`} className="ft-legal-email">{contact.email}</a>
             </p>
+            <p className="ft-legal ft-legal-reg">
+              IČO: {contact.ico}
+              <span className="ft-legal-sep" />
+              {contact.spisovaZnacka}
+            </p>
           </div>
 
           <div className="ft-icons">
