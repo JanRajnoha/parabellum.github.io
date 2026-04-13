@@ -1,0 +1,115 @@
+.references-page {
+  padding-top: 0;
+}
+
+/* Hero banner */
+.ref-page-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  background-image: url('/img/Hkhs/Hkh-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.ref-page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 19, 11, 0.7) 0%,
+    rgba(11, 19, 11, 0.5) 50%,
+    var(--color-bg) 100%
+  );
+}
+
+.ref-page-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-xl) var(--space-md) var(--space-lg);
+}
+
+
+.ref-page-hero-content h1 {
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.ref-page-hero-content p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  max-width: none;
+}
+
+/* Grid */
+.ref-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.ref-page-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.ref-page-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.ref-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.ref-star {
+  font-size: 1rem;
+  color: var(--color-border);
+}
+
+.ref-star-filled {
+  color: var(--color-accent);
+}
+
+.ref-page-quote {
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  font-style: italic;
+  flex: 1;
+}
+
+.ref-page-author {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+@media (max-width: 900px) {
+  .ref-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ref-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

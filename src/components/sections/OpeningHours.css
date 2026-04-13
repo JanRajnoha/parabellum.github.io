@@ -1,0 +1,189 @@
+.oh-section {
+  background: var(--color-bg);
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ─── Layout ─────────────────────────────────────────────────────────────────── */
+.oh-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: stretch;
+}
+
+/* ─── Live badge ─────────────────────────────────────────────────────────────── */
+.oh-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.oh-live-open  { color: var(--color-status-open); }
+.oh-live-closed { color: var(--color-text-dim); }
+
+.oh-live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.oh-live-open  .oh-live-dot { background: var(--color-status-open); box-shadow: 0 0 6px var(--color-status-open); }
+.oh-live-closed .oh-live-dot { background: var(--color-text-dim); }
+
+/* ─── Heading ────────────────────────────────────────────────────────────────── */
+.oh-heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+/* ─── Hours list ─────────────────────────────────────────────────────────────── */
+.oh-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-lg);
+}
+
+.oh-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  transition: color var(--transition);
+}
+
+.oh-day {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.oh-time {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+/* Today highlight */
+.oh-today .oh-day,
+.oh-today .oh-time {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+/* ─── Meta (location + direct lines) ────────────────────────────────────────── */
+.oh-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.oh-meta-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+}
+
+.oh-meta-address {
+  font-style: normal;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+/* Direct lines */
+.oh-direct-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.oh-direct-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.oh-direct-name {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  white-space: nowrap;
+}
+
+.oh-direct-phone {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+
+.oh-direct-phone:hover {
+  color: var(--color-accent);
+}
+
+/* ─── Map column ─────────────────────────────────────────────────────────────── */
+.oh-map-col {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.oh-map-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  flex: 1;
+  min-height: 320px;
+}
+
+.oh-map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: none;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .oh-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .oh-map-col {
+    position: static;
+  }
+
+  .oh-map-wrap {
+    height: 320px;
+  }
+
+  .oh-meta {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .oh-map-wrap {
+    height: 260px;
+  }
+}

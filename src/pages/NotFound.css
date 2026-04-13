@@ -1,0 +1,36 @@
+.notfound-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+}
+
+.notfound-inner {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.notfound-code {
+  display: block;
+  font-size: clamp(6rem, 20vw, 12rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-accent);
+  opacity: 0.2;
+  letter-spacing: -0.04em;
+  margin-bottom: -1rem;
+}
+
+.notfound-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.notfound-text {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 40ch;
+  margin: 0 auto var(--space-md);
+}

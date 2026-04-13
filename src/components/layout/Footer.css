@@ -1,0 +1,144 @@
+.footer {
+  background: #09100a;
+  border-top: 1px solid rgba(48, 72, 40, 0.5);
+}
+
+/* Single wrapper: max-width + side padding, owns all spacing */
+.ft-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ─── Main row ───────────────────────────────────────────────────────────────── */
+.ft-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: 3rem 0 2.4rem;
+}
+
+/* ─── Info block ─────────────────────────────────────────────────────────────── */
+.ft-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.ft-copy {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  max-width: none;
+  margin: 0;
+}
+
+.ft-copy-tagline {
+  color: var(--color-text-dim);
+}
+
+.ft-legal {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  max-width: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.ft-legal-email {
+  color: var(--color-text-dim);
+  transition: color var(--transition);
+}
+
+.ft-legal-email:hover {
+  color: var(--color-accent);
+}
+
+.ft-legal-sep {
+  display: inline-block;
+  width: 1px;
+  height: 0.65em;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
+/* ─── Icon buttons ───────────────────────────────────────────────────────────── */
+.ft-icons {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.ft-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dim);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.ft-icon-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.ft-icon-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(196, 154, 82, 0.07);
+}
+
+/* ─── Divider ────────────────────────────────────────────────────────────────── */
+.ft-divider {
+  height: 1px;
+  background: rgba(48, 72, 40, 0.5);
+}
+
+/* ─── Bottom nav ─────────────────────────────────────────────────────────────── */
+.ft-bottom {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1.2rem 0 1.4rem;
+}
+
+.ft-bottom-link {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  transition: color var(--transition);
+}
+
+.ft-bottom-link:hover {
+  color: var(--color-text-muted);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .ft-main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0 1.6rem;
+    gap: 1rem;
+  }
+
+  .ft-bottom {
+    gap: 1.4rem;
+  }
+}

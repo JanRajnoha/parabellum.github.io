@@ -1,0 +1,257 @@
+/* ─── Base ─────────────────────────────────────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.2rem 0;
+  transition: background var(--transition), padding var(--transition);
+}
+
+.navbar-scrolled {
+  background: rgba(11, 19, 11, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Fullscreen backdrop when mobile menu is open — background only, no blur here */
+.navbar-menu-open {
+  height: 100vh;
+  height: 100dvh;
+  background: transparent;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none;
+}
+
+/* ─── Header bar row ───────────────────────────────────────────────────────── */
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2; /* above navbar-links (1) within the same navbar stacking context */
+}
+
+.navbar-logo img {
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+  display: block;
+  /* brightness(0) → all black, invert(1) → all white */
+  filter: brightness(0) invert(1);
+}
+
+/* ─── Status badge shared styles ───────────────────────────────────────────── */
+.navbar-status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.navbar-status-open  .navbar-status-dot {
+  background: var(--color-status-open);
+  box-shadow: 0 0 5px var(--color-status-open);
+  animation: pulse-dot 2.5s ease-in-out infinite;
+}
+.navbar-status-closed .navbar-status-dot { background: var(--color-text-dim); }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+/* ─── Status in TOP BAR — mobile only ─────────────────────────────────────── */
+.navbar-status-bar {
+  display: none; /* hidden on desktop */
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  /* centered in the header bar row */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-status-bar.navbar-status-open  { color: var(--color-status-open); }
+.navbar-status-bar.navbar-status-closed { color: var(--color-text-dim); }
+
+/* ─── Status inside desktop nav ────────────────────────────────────────────── */
+.navbar-status-desktop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.navbar-status-desktop.navbar-status-open  { color: var(--color-status-open); }
+.navbar-status-desktop.navbar-status-closed { color: var(--color-text-dim); }
+
+/* ─── Desktop nav ──────────────────────────────────────────────────────────── */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar-pane-links { display: contents; } /* transparent wrapper on desktop */
+.navbar-pane-icon  { display: none; }     /* hidden on desktop */
+
+.navbar-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  position: relative;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--transition);
+}
+
+.navbar-link:hover { color: var(--color-text); }
+.navbar-link:hover::after { width: 100%; }
+
+/* ─── CTA button ───────────────────────────────────────────────────────────── */
+.navbar-cta {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.navbar-cta:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* ─── Burger ───────────────────────────────────────────────────────────────── */
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 10; /* always above the pane */
+}
+
+.navbar-burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.navbar-burger-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar-burger-open span:nth-child(2) { opacity: 0; }
+.navbar-burger-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ─── Mobile ───────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Show status in top bar */
+  .navbar-status-bar { display: flex; }
+
+  /* Hide desktop-only status inside pane */
+  .navbar-status-desktop { display: none; }
+
+  /*
+   * Burger: position:fixed so it lives in the root stacking context,
+   * above the overlay (z-index 101) at all times.
+   */
+  .navbar-burger {
+    display: flex;
+    position: fixed;
+    top: 1.1rem;
+    right: var(--space-md);
+    z-index: 200;
+  }
+
+  /*
+   * Overlay: position:fixed + inset:0 = true full-screen relative to viewport.
+   * justify-content:center + align-items:center centers items in 100dvh.
+   */
+  .navbar-links {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 11, 6, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: none;
+    transition: opacity 0.28s ease;
+    z-index: 101;
+  }
+
+  .navbar-links-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Decorative icon — pinned to the same top-left spot as the navbar logo */
+  .navbar-pane-icon {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    left: var(--space-md);
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+
+  .navbar-pane-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .navbar-link {
+    font-size: 1.15rem;
+    letter-spacing: 0.22em;
+  }
+
+  .navbar-cta {
+    font-size: 0.9rem;
+    padding: 0.7rem 2.4rem;
+    border-radius: var(--radius);
+  }
+}

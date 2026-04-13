@@ -1,0 +1,83 @@
+.offer-category-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Shisha block ─────────────────────────────────────────── */
+.offer-shisha {
+  margin-bottom: var(--space-xl);
+}
+
+.offer-shisha-main {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.offer-img-main {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  filter: brightness(0.85) saturate(0.75);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+
+.offer-shisha-text h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.offer-shisha-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ── Drinks block ─────────────────────────────────────────── */
+.offer-drinks {
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.offer-drinks-label {
+  margin-bottom: var(--space-md);
+}
+
+.offer-drinks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.offer-img-drink {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  filter: brightness(0.8) saturate(0.7);
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.45);
+}
+
+.offer-drink-text h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .offer-shisha-main,
+  .offer-drinks-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
