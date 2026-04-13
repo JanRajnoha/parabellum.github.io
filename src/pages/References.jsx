@@ -1,6 +1,32 @@
 import { Helmet } from 'react-helmet-async'
+import SectionTitle from '../components/ui/SectionTitle'
 import { references } from '../data/references'
 import './References.css'
+
+const reviewsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: references.map((ref, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'Review',
+      author: { '@type': 'Organization', name: ref.name },
+      reviewBody: ref.text,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: ref.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      itemReviewed: {
+        '@type': 'BarOrPub',
+        name: 'Para Bellum Lounge',
+        url: 'https://parabellumlounge.cz/',
+      },
+    },
+  })),
+}
 
 function Stars({ count }) {
   return (
@@ -17,29 +43,38 @@ export default function References() {
     <main className="references-page">
       <Helmet>
         <title>Reference — Para Bellum Lounge Brno</title>
-        <meta name="description" content="Přečtěte si, co říkají hosté Para Bellum Lounge. Hodnocení a reference zákazníků hookah baru v centru Brna." />
+        <meta name="description" content="Přečtěte si, co říkají naši klienti Para Bellum Lounge. Hodnocení a reference zákazníků hookah baru v centru Brna." />
         <meta property="og:title" content="Reference — Para Bellum Lounge Brno" />
-        <meta property="og:description" content="Co říkají hosté Para Bellum Lounge — prémiového hookah baru v centru Brna." />
+        <meta property="og:description" content="Co říkají naši klienti Para Bellum Lounge — prémiového hookah baru v centru Brna." />
         <meta property="og:url" content="https://parabellumlounge.cz/references" />
         <link rel="canonical" href="https://parabellumlounge.cz/references" />
+        <script type="application/ld+json">{JSON.stringify(reviewsSchema)}</script>
       </Helmet>
-      <div className="ref-page-hero">
-        <div className="ref-page-hero-overlay" />
-        <div className="ref-page-hero-content">
-          <span className="label-accent">Hosté o nás</span>
+
+      {/* Hero */}
+      <div className="ref-hero">
+        <div className="ref-hero-overlay" />
+        <div className="ref-hero-content container">
+          <span className="label-accent">Klienti o nás</span>
           <h1>Reference</h1>
-          <p>Co říkají ti, kdo u nás byli</p>
+          <p>Co říkají naši klienti</p>
         </div>
       </div>
 
-      <section className="section">
+      {/* Reviews */}
+      <section className="ref-section section">
         <div className="container">
-          <div className="ref-page-grid">
-            {references.map(({ id, name, text, rating }) => (
-              <div key={id} className="ref-page-card">
+          <SectionTitle label="Hodnocení" title="Co říkají klienti" center />
+          <div className="ref-grid">
+            {references.map(({ id, name, year, text, rating }) => (
+              <div key={id} className="ref-card">
+                <span className="ref-quote-mark">"</span>
                 <Stars count={rating} />
-                <blockquote className="ref-page-quote">„{text}"</blockquote>
-                <footer className="ref-page-author">— {name}</footer>
+                <blockquote className="ref-quote">{text}</blockquote>
+                <footer className="ref-author">
+                  <span className="ref-name">— {name}</span>
+                  {year && <span className="ref-year">{year}</span>}
+                </footer>
               </div>
             ))}
           </div>
