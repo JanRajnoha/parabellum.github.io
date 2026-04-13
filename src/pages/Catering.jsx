@@ -52,7 +52,7 @@ export default function Catering() {
               <span className="cat-stat-label">Celá republika</span>
             </div>
             <div className="cat-stat">
-              <span className="cat-stat-num">∞</span>
+              <span className="cat-stat-num">100 %</span>
               <span className="cat-stat-label">Na míru</span>
             </div>
           </div>
