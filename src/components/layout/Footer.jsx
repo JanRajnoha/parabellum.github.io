@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="ft-main">
           <div className="ft-info">
             <p className="ft-copy">
-              © {year} Para Bellum Lounge
+              © {year} Para Bellum Lounge test
             </p>
             <p className="ft-legal">
               Sukova 49/4, Brno 602 00
