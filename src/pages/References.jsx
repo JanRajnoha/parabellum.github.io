@@ -55,7 +55,6 @@ export default function References() {
       <div className="ref-hero">
         <div className="ref-hero-overlay" />
         <div className="ref-hero-content container">
-          <span className="label-accent">Klienti o nás</span>
           <h1>Reference</h1>
           <p>Co říkají naši klienti</p>
         </div>
